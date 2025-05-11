@@ -27,12 +27,8 @@ import DefaultNavbar from "sections/Navbars/DefaultNavbar";
 import DefaultFooter from "sections/Footers/DefaultFooter";
 
 // Rental page sections
-import Search from "pages/landing/sections/Search";
 import Places from "pages/landing/sections/Places";
-import Testimonials from "pages/landing/sections/Testimonials";
-import Faq from "pages/landing/sections/Faq";
 import Contact from "pages/landing/sections/Contact";
-import ContactCopy from "pages/landing/sections/ContactCopy";
 
 // Routes
 import routes from "routes";
@@ -42,7 +38,7 @@ import footerRoutes from "footer.routes";
 import bgImage from "assets/images/bg-rental.jpeg";
 import { column } from "stylis";
 
-function Rental() {
+function Landing() {
   return (
     <>
       <DefaultNavbar
@@ -106,7 +102,6 @@ function Rental() {
         }}
       >
         <Places />
-        <Testimonials />
         <Contact />
       </Card>
       <MKBox pt={6} px={1} mt={6}>
@@ -116,4 +111,4 @@ function Rental() {
   );
 }
 
-export default Rental;
+export default Landing;

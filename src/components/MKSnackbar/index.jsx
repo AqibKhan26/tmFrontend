@@ -22,6 +22,7 @@ import IconButton from "@mui/material/IconButton";
 import Icon from "@mui/material/Icon";
 import Divider from "@mui/material/Divider";
 import Fade from "@mui/material/Fade";
+import CloseIcon from "@mui/icons-material/Close";
 
 // Material Kit 2 PRO React components
 import MKBox from "components/MKBox";
@@ -69,7 +70,7 @@ function MKSnackbar({
       {...rest}
       action={
         <IconButton size="small" aria-label="close" color="inherit" onClick={close}>
-          <Icon fontSize="small">close</Icon>
+          <CloseIcon fontSize="small" />
         </IconButton>
       }
     >
@@ -85,7 +86,7 @@ function MKSnackbar({
           backgroundColor: ({ palette }) => palette[color] || palette.white.main,
         }}
       >
-        <MKBox
+        {/* <MKBox
           display="flex"
           justifyContent="space-between"
           alignItems="center"
@@ -109,22 +110,20 @@ function MKSnackbar({
             <MKTypography variant="caption" color={dateTimeColor}>
               {dateTime}
             </MKTypography>
-            <Icon
+            <CloseIcon
               sx={{
                 color: ({ palette: { dark, white } }) =>
                   bgWhite || color === "light" ? dark.main : white.main,
                 fontWeight: ({ typography: { fontWeightBold } }) => fontWeightBold,
                 cursor: "pointer",
-                marginLeft: 2,
+                ml: 2,
                 transform: "translateY(-1px)",
               }}
               onClick={close}
-            >
-              close
-            </Icon>
+            />
           </MKBox>
         </MKBox>
-        <Divider sx={{ margin: 0 }} light={dividerColor} />
+        <Divider sx={{ margin: 0 }} light={dividerColor} /> */}
         <MKBox
           p={1.5}
           sx={{
