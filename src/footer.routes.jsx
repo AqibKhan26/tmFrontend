@@ -39,16 +39,16 @@ export default {
     {
       name: "company",
       items: [
-        { name: "Home", href: "https://www.creative-tim.com/presentation" },
-        { name: "Contact Us", href: "https://www.creative-tim.com/templates/free" }
+        { name: "Home", href: "/home" },
+        { name: "Contact Us", href: "/home" }
       ],
     },
     {
       name: "Travel With Us",
       items: [
-        { name: "Thailand", href: "https://iradesign.io/" },
-        { name: "Vietnam", href: "https://www.creative-tim.com/bits" },
-        { name: "Kenya", href: "https://www.creative-tim.com/affiliates/new" },
+        { name: "Thailand", href: "/home" },
+        { name: "Vietnam", href: "/home" },
+        { name: "Kenya", href: "/home" },
       ],
     }
   ],
