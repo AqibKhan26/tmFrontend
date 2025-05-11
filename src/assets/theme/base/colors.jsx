@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,19 +14,19 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base colors for the Material Dashboard 3 PRO React.
+ * The base colors for the Material Kit 2 PRO React.
  * You can add new color using this file.
- * You can customized the colors for the entire Material Dashboard 3 PRO React using thie file.
+ * You can customized the colors for the entire Material Kit 2 PRO React using thie file.
  */
 
-const colors = {
+export default {
   background: {
-    default: "#f5f5f5",
+    default: "#f0f2f5",
   },
 
   text: {
-    main: "#737373",
-    focus: "#737373",
+    main: "#7b809a",
+    focus: "#7b809a",
   },
 
   transparent: {
@@ -55,8 +55,8 @@ const colors = {
   },
 
   info: {
-    main: "#262626",
-    focus: "#262626",
+    main: "#1A73E8",
+    focus: "#1662C4",
   },
 
   success: {
@@ -80,20 +80,20 @@ const colors = {
   },
 
   dark: {
-    main: "#171717",
-    focus: "#171717",
+    main: "#344767",
+    focus: "#2c3c58",
   },
 
   grey: {
-    100: "#f5f5f5",
-    200: "#e5e5e5",
-    300: "#d4d4d4",
-    400: "#a3a3a3",
-    500: "#737373",
-    600: "#525252",
-    700: "#404040",
-    800: "#262626",
-    900: "#171717",
+    100: "#f8f9fa",
+    200: "#f0f2f5",
+    300: "#dee2e6",
+    400: "#ced4da",
+    500: "#adb5bd",
+    600: "#6c757d",
+    700: "#495057",
+    800: "#343a40",
+    900: "#212529",
   },
 
   gradients: {
@@ -108,8 +108,8 @@ const colors = {
     },
 
     info: {
-      main: "#42424a",
-      state: "#191919",
+      main: "#49a3f1",
+      state: "#1A73E8",
     },
 
     success: {
@@ -245,7 +245,7 @@ const colors = {
   coloredShadows: {
     primary: "#e91e62",
     secondary: "#110e0e",
-    info: "#191919",
+    info: "#00bbd4",
     success: "#4caf4f",
     warning: "#ff9900",
     error: "#f44336",
@@ -259,5 +259,3 @@ const colors = {
     indicator: { boxShadow: "#ddd" },
   },
 };
-
-export default colors;

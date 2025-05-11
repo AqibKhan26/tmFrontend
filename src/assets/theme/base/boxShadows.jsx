@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,21 +14,21 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base box-shadow styles for the Material Dashboard 3 PRO React.
+ * The base box-shadow styles for the Material Kit 2 PRO React.
  * You can add new box-shadow using this file.
- * You can customized the box-shadow for the entire Material Dashboard 3 PRO React using thie file.
+ * You can customized the box-shadow for the entire Material Kit 2 PRO React using thie file.
  */
 
-// Material Dashboard 3 PRO React Base Styles
+// Material Kit 2 PRO React Base Styles
 import colors from "assets/theme/base/colors";
 
-// Material Dashboard 3 PRO React Helper Functions
+// Material Kit 2 PRO React Helper Functions
 import boxShadow from "assets/theme/functions/boxShadow";
 
 const { black, white, tabs, coloredShadows } = colors;
 
-const boxShadows = {
-  xs: boxShadow([0, 1], [2, 0], black.main, 0.05),
+export default {
+  xs: boxShadow([0, 2], [9, -5], black.main, 0.15),
   sm: boxShadow([0, 5], [10, 0], black.main, 0.12),
   md: `${boxShadow([0, 4], [6, -1], black.main, 0.1)}, ${boxShadow(
     [0, 2],
@@ -99,15 +99,14 @@ const boxShadows = {
       coloredShadows.dark,
       0.4
     )}`,
+    white: `${boxShadow([0, 4], [20, 0], white.main, 0.14)}, ${boxShadow(
+      [0, 7],
+      [10, -5],
+      white.main,
+      0.4
+    )}`,
   },
 
-  navbarBoxShadow: `${boxShadow(
-    [0, 0],
-    [1, 1],
-    white.main,
-    0.9,
-    "inset"
-  )}, ${boxShadow([0, 20], [27, 0], black.main, 0.05)}`,
   sliderBoxShadow: {
     thumb: boxShadow([0, 1], [13, 0], black.main, 0.2),
   },
@@ -115,5 +114,3 @@ const boxShadows = {
     indicator: boxShadow([0, 1], [5, 1], tabs.indicator.boxShadow, 1),
   },
 };
-
-export default boxShadows;

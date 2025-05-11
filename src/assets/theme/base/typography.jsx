@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,23 +14,24 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base typography styles for the Material Dashboard 3 PRO React.
+ * The base typography styles for the Material Kit 2 PRO React.
  * You can add new typography style using this file.
- * You can customized the typography styles for the entire Material Dashboard 3 PRO React using thie file.
+ * You can customized the typography styles for the entire Material Kit 2 PRO React using thie file.
  */
 
-// Material Dashboard 3 PRO React Base Styles
+// Material Kit 2 PRO React Base Styles
 import colors from "assets/theme/base/colors";
 
-// Material Dashboard 3 PRO React Helper Functions
+// Material Kit 2 PRO React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { dark } = colors;
 
 const baseProperties = {
-  fontFamily: '"Inter", "Helvetica", "Arial", sans-serif',
+  fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+  fontFamily2: '"Roboto Slab", sans-serif',
   fontWeightLighter: 100,
-  fontWeightLight: 400,
+  fontWeightLight: 300,
   fontWeightRegular: 400,
   fontWeightMedium: 600,
   fontWeightBold: 700,
@@ -45,7 +46,6 @@ const baseProperties = {
 };
 
 const baseHeadingProperties = {
-  fontFamily: baseProperties.fontFamily,
   color: dark.main,
   fontWeight: baseProperties.fontWeightBold,
 };
@@ -66,36 +66,42 @@ const typography = {
   fontWeightBold: baseProperties.fontWeightBold,
 
   h1: {
+    fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(48),
     lineHeight: 1.25,
     ...baseHeadingProperties,
   },
 
   h2: {
+    fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(36),
     lineHeight: 1.3,
     ...baseHeadingProperties,
   },
 
   h3: {
+    fontFamily: baseProperties.fontFamily2,
     fontSize: pxToRem(30),
     lineHeight: 1.375,
     ...baseHeadingProperties,
   },
 
   h4: {
+    fontFamily: baseProperties.fontFamily,
     fontSize: pxToRem(24),
     lineHeight: 1.375,
     ...baseHeadingProperties,
   },
 
   h5: {
+    fontFamily: baseProperties.fontFamily,
     fontSize: pxToRem(20),
     lineHeight: 1.375,
     ...baseHeadingProperties,
   },
 
   h6: {
+    fontFamily: baseProperties.fontFamily,
     fontSize: pxToRem(16),
     lineHeight: 1.625,
     ...baseHeadingProperties,

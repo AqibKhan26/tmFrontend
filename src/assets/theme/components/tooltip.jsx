@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -16,19 +16,19 @@ Coded by www.creative-tim.com
 // @mui material components
 import Fade from "@mui/material/Fade";
 
-// Material Dashboard 3 PRO React base styles
+// Material Kit 2 PRO React base styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 import borders from "assets/theme/base/borders";
 
-// Material Dashboard 3 PRO React helper functions
+// Material Kit 2 PRO React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { black, light } = colors;
 const { size, fontWeightRegular } = typography;
 const { borderRadius } = borders;
 
-const tooltip = {
+export default {
   defaultProps: {
     arrow: true,
     TransitionComponent: Fade,
@@ -52,5 +52,3 @@ const tooltip = {
     },
   },
 };
-
-export default tooltip;

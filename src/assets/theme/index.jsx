@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/soft-ui-dashboard-pro-material-ui
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -15,8 +15,9 @@ Coded by www.creative-tim.com
 
 // @mui material components
 import { createTheme } from "@mui/material/styles";
+// import Fade from "@mui/material/Fade";
 
-// Material Dashboard 3 PRO React base styles
+// Material Kit 2 PRO React base styles
 import colors from "assets/theme/base/colors";
 import breakpoints from "assets/theme/base/breakpoints";
 import typography from "assets/theme/base/typography";
@@ -24,15 +25,14 @@ import boxShadows from "assets/theme/base/boxShadows";
 import borders from "assets/theme/base/borders";
 import globals from "assets/theme/base/globals";
 
-// Material Dashboard 3 PRO React helper functions
+// Material Kit 2 PRO React helper functions
 import boxShadow from "assets/theme/functions/boxShadow";
 import hexToRgb from "assets/theme/functions/hexToRgb";
 import linearGradient from "assets/theme/functions/linearGradient";
 import pxToRem from "assets/theme/functions/pxToRem";
 import rgba from "assets/theme/functions/rgba";
 
-// Material Dashboard 3 PRO React components base styles for @mui material components
-import sidenav from "assets/theme/components/sidenav";
+// Material Kit 2 PRO React components base styles for @mui material components
 import list from "assets/theme/components/list";
 import listItem from "assets/theme/components/list/listItem";
 import listItemText from "assets/theme/components/list/listItemText";
@@ -83,6 +83,7 @@ import dialogTitle from "assets/theme/components/dialog/dialogTitle";
 import dialogContent from "assets/theme/components/dialog/dialogContent";
 import dialogContentText from "assets/theme/components/dialog/dialogContentText";
 import dialogActions from "assets/theme/components/dialog/dialogActions";
+import swiper from "assets/theme/components/swiper";
 
 export default createTheme({
   breakpoints: { ...breakpoints },
@@ -104,9 +105,9 @@ export default createTheme({
         ...globals,
         ...flatpickr,
         ...container,
+        ...swiper,
       },
     },
-    MuiDrawer: { ...sidenav },
     MuiList: { ...list },
     MuiListItem: { ...listItem },
     MuiListItemText: { ...listItemText },

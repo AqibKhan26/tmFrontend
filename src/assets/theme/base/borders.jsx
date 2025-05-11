@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,20 +14,20 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base border styles for the Material Dashboard 3 PRO React.
+ * The base border styles for the Material Kit 2 PRO React.
  * You can add new border width, border color or border radius using this file.
- * You can customized the borders value for the entire Material Dashboard 3 PRO React using thie file.
+ * You can customized the borders value for the entire Material Kit 2 PRO React using thie file.
  */
 
-// Material Dashboard 3 PRO React Base Styles
+// Material Kit 2 PRO React Base Styles
 import colors from "assets/theme/base/colors";
 
-// Material Dashboard 3 PRO React Helper Functions
+// Material Kit 2 PRO React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { grey } = colors;
 
-const borders = {
+export default {
   borderColor: grey[300],
 
   borderWidth: {
@@ -49,5 +49,3 @@ const borders = {
     section: pxToRem(160),
   },
 };
-
-export default borders;

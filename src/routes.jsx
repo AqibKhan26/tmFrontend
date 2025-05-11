@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,511 +14,494 @@ Coded by www.creative-tim.com
 */
 
 /** 
-  All of the routes for the Material Dashboard 3 PRO React are added here,
+  All of the routes for the Material Kit 2 PRO React React are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
-  the Sidenav.
+  the Navbar.
 
   For adding a new route you can follow the existing routes in the routes array.
-  1. The `type` key with the `collapse` value is used for a route.
-  2. The `type` key with the `title` value is used for a title inside the Sidenav. 
-  3. The `type` key with the `divider` value is used for a divider between Sidenav items.
-  4. The `name` key is used for the name of the route on the Sidenav.
-  5. The `key` key is used for the key of the route (It will help you with the key prop inside a loop).
-  6. The `icon` key is used for the icon of the route on the Sidenav, you have to add a node.
-  7. The `collapse` key is used for making a collapsible item on the Sidenav that contains other routes
+  1. The `name` key is used for the name of the route on the Navbar.
+  2. The `icon` key is used for the icon of the route on the Navbar.
+  3. The `collapse` key is used for making a collapsible item on the Navbar that contains other routes
   inside (nested routes), you need to pass the nested routes inside an array as a value for the `collapse` key.
-  8. The `route` key is used to store the route location which is used for the react router.
-  9. The `href` key is used to store the external links location.
-  10. The `title` key is only for the item with the type of `title` and its used for the title text on the Sidenav.
-  10. The `component` key is used to store the component of its route.
+  4. The `route` key is used to store the route location which is used for the react router.
+  5. The `href` key is used to store the external links location.
+  6. The `component` key is used to store the component of its route.
+  7. The `dropdown` key is used to define that the item should open a dropdown for its collapse items .
+  8. The `description` key is used to define the description of
+          a route under its name.
+  9. The `columns` key is used to define that how the content should look inside the dropdown menu as columns,
+          you can set the columns amount based on this key.
+  10. The `rowsPerColumn` key is used to define that how many rows should be in a column.
 */
 
-// Material Dashboard 3 PRO React layouts
-import Analytics from "layouts/dashboards/analytics";
-import Sales from "layouts/dashboards/sales";
-import ProfileOverview from "layouts/pages/profile/profile-overview";
-import AllProjects from "layouts/pages/profile/all-projects";
-import NewUser from "layouts/pages/users/new-user";
-import Settings from "layouts/pages/account/settings";
-import Billing from "layouts/pages/account/billing";
-import Invoice from "layouts/pages/account/invoice";
-import Timeline from "layouts/pages/projects/timeline";
-import PricingPage from "layouts/pages/pricing-page";
-import Widgets from "layouts/pages/widgets";
-import RTL from "layouts/pages/rtl";
-import Charts from "layouts/pages/charts";
-import Notifications from "layouts/pages/notifications";
-import Wizard from "layouts/applications/wizard";
-import DataTables from "layouts/applications/data-tables";
-import Calendar from "layouts/applications/calendar";
-import NewProduct from "layouts/ecommerce/products/new-product";
-import EditProduct from "layouts/ecommerce/products/edit-product";
-import ProductPage from "layouts/ecommerce/products/product-page";
-import OrderList from "layouts/ecommerce/orders/order-list";
-import OrderDetails from "layouts/ecommerce/orders/order-details";
-import SignInBasic from "layouts/authentication/sign-in/basic";
-import SignInCover from "layouts/authentication/sign-in/cover";
-import SignInIllustration from "layouts/authentication/sign-in/illustration";
-import SignUpCover from "layouts/authentication/sign-up/cover";
-import ResetCover from "layouts/authentication/reset-password/cover";
-
-// Material Dashboard 3 PRO React components
-import MDAvatar from "components/MDAvatar";
-
-// @mui icons
+// @mui material components
 import Icon from "@mui/material/Icon";
+import Page from "pages/landing";
+import HomeIcon from "@mui/icons-material/Home";
 
-// Images
-import profilePicture from "assets/images/team-3.jpg";
+
+// Pages
+// import CoworkingPage from "layouts/pages/landing-pages/coworking";
+// import Rental from "layouts/pages/landing-pages/rental";
+// import AboutUs from "layouts/pages/company/about-us";
+// import Pricing from "layouts/pages/company/pricing";
+// import HelpCenter from "layouts/pages/support/help-center";
+// import ContactUs from "layouts/pages/support/contact-us";
+// import Faq from "layouts/pages/support/faq";
+// import Privacy from "layouts/pages/support/privacy";
+// import DesktopApp from "layouts/pages/apps/desktop-app";
+// import SingleArticle from "layouts/pages/blogs/single-article";
+// import Author from "layouts/pages/blogs/author";
+// import VirtualRealityPage from "layouts/pages/extra/virtual-reality";
+
+// Account
+// import SignInBasicPage from "layouts/authentication/sign-in/basic";
+// import SignInCoverPage from "layouts/authentication/sign-in/cover";
+// import SignInIllustration from "layouts/authentication/sign-in/illustration";
+// import SignInSimplePage from "layouts/authentication/sign-in/simple";
+// import SignUpCoverPage from "layouts/authentication/sign-up/cover";
+// import ResetPasswordPage from "layouts/authentication/reset-password/cover";
+
+// Sections
+// import PageHeaders from "layouts/sections/page-sections/page-headers";
+// import Features from "layouts/sections/page-sections/featuers";
+// import PricingSection from "layouts/sections/page-sections/pricing";
+// import FaqSection from "layouts/sections/page-sections/faq";
+// import BlogPosts from "layouts/sections/page-sections/blog-posts";
+// import Testimonials from "layouts/sections/page-sections/testimonials";
+// import Teams from "layouts/sections/page-sections/teams";
+// import Stats from "layouts/sections/page-sections/stats";
+// import Cta from "layouts/sections/page-sections/cta";
+// import Applications from "layouts/sections/page-sections/applications";
+// import LogoAreas from "layouts/sections/page-sections/logo-areas";
+// import Footers from "layouts/sections/page-sections/footers";
+// import GeneralCards from "layouts/sections/page-sections/general-cards";
+// import ContentSections from "layouts/sections/page-sections/content-sections";
+// import Navbars from "layouts/sections/navigation/navbars";
+// import NavTabs from "layouts/sections/navigation/nav-tabs";
+// import Pagination from "layouts/sections/navigation/pagination";
+// import Newsletters from "layouts/sections/input-areas/newsletters";
+// import ContactSections from "layouts/sections/input-areas/contact-sections";
+// import Inputs from "layouts/sections/input-areas/inputs";
+// import Forms from "layouts/sections/input-areas/forms";
+// import Alerts from "layouts/sections/attention-catchers/alerts";
+// import Notifications from "layouts/sections/attention-catchers/notifications";
+// import Modals from "layouts/sections/attention-catchers/modals";
+// import TooltipsPopovers from "layouts/sections/attention-catchers/tooltips-popovers";
+// import Avatars from "layouts/sections/elements/avatars";
+// import Badges from "layouts/sections/elements/badges";
+// import BreadcrumbsEl from "layouts/sections/elements/breadcrumbs";
+// import Buttons from "layouts/sections/elements/buttons";
+// import Dropdowns from "layouts/sections/elements/dropdowns";
+// import ProgressBars from "layouts/sections/elements/progress-bars";
+// import SocialButtons from "layouts/sections/elements/social-buttons";
+// import Tables from "layouts/sections/elements/tables";
+// import Toggles from "layouts/sections/elements/toggles";
+// import Typography from "layouts/sections/elements/typography";
 
 const routes = [
   {
-    type: "collapse",
-    name: "Brooklyn Alice",
-    key: "brooklyn-alice",
-    icon: <MDAvatar src={profilePicture} alt="Brooklyn Alice" size="sm" />,
-    collapse: [
-      {
-        name: "My Profile",
-        key: "my-profile",
-        route: "/pages/profile/profile-overview",
-        component: <ProfileOverview />,
-      },
-      {
-        name: "Settings",
-        key: "profile-settings",
-        route: "/pages/account/settings",
-        component: <Settings />,
-      },
-      {
-        name: "Logout",
-        key: "logout",
-        route: "/authentication/sign-in/basic",
-        component: <SignInBasic />,
-      },
-    ],
-  },
-  { type: "divider", key: "divider-0" },
-  {
-    type: "collapse",
-    name: "Dashboards",
-    key: "dashboards",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    collapse: [
-      {
-        name: "Analytics",
-        key: "analytics",
-        route: "/dashboards/analytics",
-        component: <Analytics />,
-      },
-      {
-        name: "Sales",
-        key: "sales",
-        route: "/dashboards/sales",
-        component: <Sales />,
-      },
-    ],
-  },
-  { type: "title", title: "Pages", key: "title-pages" },
-  {
-    type: "collapse",
-    name: "Pages",
-    key: "pages",
-    icon: <Icon fontSize="small">image</Icon>,
-    collapse: [
-      {
-        name: "Projects",
-        key: "projects",
-        collapse: [
-          {
-            name: "Timeline",
-            key: "timeline",
-            route: "/pages/projects/timeline",
-            component: <Timeline />,
-          },
-        ],
-      },
-      {
-        name: "Pricing Page",
-        key: "pricing-page",
-        route: "/pages/pricing-page",
-        component: <PricingPage />,
-      },
-      { name: "RTL", key: "rtl", route: "/pages/rtl", component: <RTL /> },
-      {
-        name: "Widgets",
-        key: "widgets",
-        route: "/pages/widgets",
-        component: <Widgets />,
-      },
-      {
-        name: "Charts",
-        key: "charts",
-        route: "/pages/charts",
-        component: <Charts />,
-      },
-      {
-        name: "Notfications",
-        key: "notifications",
-        route: "/pages/notifications",
-        component: <Notifications />,
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Account",
-    key: "account",
-    icon: <Icon fontSize="small">person</Icon>,
-    collapse: [
-      {
-        name: "Settings",
-        key: "settings",
-        route: "/pages/account/settings",
-        component: <Settings />,
-      },
-      {
-        name: "Billing",
-        key: "billing",
-        route: "/pages/account/billing",
-        component: <Billing />,
-      },
-      {
-        name: "Invoice",
-        key: "invoice",
-        route: "/pages/account/invoice",
-        component: <Invoice />,
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Team",
-    key: "team",
-    icon: <Icon fontSize="small">people</Icon>,
-    collapse: [
-      {
-        name: "All Projects",
-        key: "all-projects",
-        route: "/pages/profile/all-projects",
-        component: <AllProjects />,
-      },
-      {
-        name: "New User",
-        key: "new-user",
-        route: "/pages/users/new-user",
-        component: <NewUser />,
-      },
-      {
-        name: "Profile Overview",
-        key: "profile-overview",
-        route: "/pages/profile/profile-overview",
-        component: <ProfileOverview />,
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Applications",
-    key: "applications",
-    icon: <Icon fontSize="small">apps</Icon>,
-    collapse: [
-      {
-        name: "Wizard",
-        key: "wizard",
-        route: "/applications/wizard",
-        component: <Wizard />,
-      },
-      {
-        name: "Data Tables",
-        key: "data-tables",
-        route: "/applications/data-tables",
-        component: <DataTables />,
-      },
-      {
-        name: "Calendar",
-        key: "calendar",
-        route: "/applications/calendar",
-        component: <Calendar />,
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Ecommerce",
-    key: "ecommerce",
-    icon: <Icon fontSize="small">shopping_basket</Icon>,
-    collapse: [
-      {
-        name: "Products",
-        key: "products",
-        collapse: [
-          {
-            name: "New Product",
-            key: "new-product",
-            route: "/ecommerce/products/new-product",
-            component: <NewProduct />,
-          },
-          {
-            name: "Edit Product",
-            key: "edit-product",
-            route: "/ecommerce/products/edit-product",
-            component: <EditProduct />,
-          },
-          {
-            name: "Product Page",
-            key: "product-page",
-            route: "/ecommerce/products/product-page",
-            component: <ProductPage />,
-          },
-        ],
-      },
-      {
-        name: "Orders",
-        key: "orders",
-        collapse: [
-          {
-            name: "Order List",
-            key: "order-list",
-            route: "/ecommerce/orders/order-list",
-            component: <OrderList />,
-          },
-          {
-            name: "Order Details",
-            key: "order-details",
-            route: "/ecommerce/orders/order-details",
-            component: <OrderDetails />,
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Authentication",
-    key: "authentication",
-    icon: <Icon fontSize="small">content_paste</Icon>,
-    collapse: [
-      {
-        name: "Sign In",
-        key: "sign-in",
-        collapse: [
-          {
-            name: "Basic",
-            key: "basic",
-            route: "/authentication/sign-in/basic",
-            component: <SignInBasic />,
-          },
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/sign-in/cover",
-            component: <SignInCover />,
-          },
-          {
-            name: "Illustration",
-            key: "illustration",
-            route: "/authentication/sign-in/illustration",
-            component: <SignInIllustration />,
-          },
-        ],
-      },
-      {
-        name: "Sign Up",
-        key: "sign-up",
-        collapse: [
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/sign-up/cover",
-            component: <SignUpCover />,
-          },
-        ],
-      },
-      {
-        name: "Reset Password",
-        key: "reset-password",
-        collapse: [
-          {
-            name: "Cover",
-            key: "cover",
-            route: "/authentication/reset-password/cover",
-            component: <ResetCover />,
-          },
-        ],
-      },
-    ],
-  },
-  { type: "divider", key: "divider-1" },
-  { type: "title", title: "Docs", key: "title-docs" },
-  {
-    type: "collapse",
-    name: "Basic",
-    key: "basic",
-    icon: <Icon fontSize="small">upcoming</Icon>,
-    collapse: [
-      {
-        name: "Getting Started",
-        key: "getting-started",
-        collapse: [
-          {
-            name: "Overview",
-            key: "overview",
-            href: "https://www.creative-tim.com/learning-lab/react/overview/material-dashboard/",
-          },
-          {
-            name: "License",
-            key: "license",
-            href: "https://www.creative-tim.com/learning-lab/react/license/material-dashboard/",
-          },
-          {
-            name: "Quick Start",
-            key: "quick-start",
-            href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-dashboard/",
-          },
-          {
-            name: "Build Tools",
-            key: "build-tools",
-            href: "https://www.creative-tim.com/learning-lab/react/build-tools/material-dashboard/",
-          },
-        ],
-      },
-      {
-        name: "Foundation",
-        key: "foundation",
-        collapse: [
-          {
-            name: "Colors",
-            key: "colors",
-            href: "https://www.creative-tim.com/learning-lab/react/colors/material-dashboard/",
-          },
-          {
-            name: "Grid",
-            key: "grid",
-            href: "https://www.creative-tim.com/learning-lab/react/grid/material-dashboard/",
-          },
-          {
-            name: "Typography",
-            key: "base-typography",
-            href: "https://www.creative-tim.com/learning-lab/react/base-typography/material-dashboard/",
-          },
-          {
-            name: "Borders",
-            key: "borders",
-            href: "https://www.creative-tim.com/learning-lab/react/borders/material-dashboard/",
-          },
-          {
-            name: "Box Shadows",
-            key: "box-shadows",
-            href: "https://www.creative-tim.com/learning-lab/react/box-shadows/material-dashboard/",
-          },
-          {
-            name: "Functions",
-            key: "functions",
-            href: "https://www.creative-tim.com/learning-lab/react/functions/material-dashboard/",
-          },
-          {
-            name: "Routing System",
-            key: "routing-system",
-            href: "https://www.creative-tim.com/learning-lab/react/routing-system/material-dashboard/",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Components",
-    key: "components",
-    icon: <Icon fontSize="small">view_in_ar</Icon>,
-    collapse: [
-      {
-        name: "Alerts",
-        key: "alerts",
-        href: "https://www.creative-tim.com/learning-lab/react/alerts/material-dashboard/",
-      },
-      {
-        name: "Avatar",
-        key: "avatar",
-        href: "https://www.creative-tim.com/learning-lab/react/avatar/material-dashboard/",
-      },
-      {
-        name: "Badge",
-        key: "badge",
-        href: "https://www.creative-tim.com/learning-lab/react/badge/material-dashboard/",
-      },
-      {
-        name: "Badge Dot",
-        key: "badge-dot",
-        href: "https://www.creative-tim.com/learning-lab/react/badge-dot/material-dashboard/",
-      },
-      {
-        name: "Box",
-        key: "box",
-        href: "https://www.creative-tim.com/learning-lab/react/box/material-dashboard/",
-      },
-      {
-        name: "Buttons",
-        key: "buttons",
-        href: "https://www.creative-tim.com/learning-lab/react/buttons/material-dashboard/",
-      },
-      {
-        name: "Date Picker",
-        key: "date-picker",
-        href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-dashboard/",
-      },
-      {
-        name: "Dropzone",
-        key: "dropzone",
-        href: "https://www.creative-tim.com/learning-lab/react/dropzone/material-dashboard/",
-      },
-      {
-        name: "Editor",
-        key: "editor",
-        href: "https://www.creative-tim.com/learning-lab/react/quill/material-dashboard/",
-      },
-      {
-        name: "Input",
-        key: "input",
-        href: "https://www.creative-tim.com/learning-lab/react/input/material-dashboard/",
-      },
-      {
-        name: "Pagination",
-        key: "pagination",
-        href: "https://www.creative-tim.com/learning-lab/react/pagination/material-dashboard/",
-      },
-      {
-        name: "Progress",
-        key: "progress",
-        href: "https://www.creative-tim.com/learning-lab/react/progress/material-dashboard/",
-      },
-      {
-        name: "Snackbar",
-        key: "snackbar",
-        href: "https://www.creative-tim.com/learning-lab/react/snackbar/material-dashboard/",
-      },
-      {
-        name: "Social Button",
-        key: "social-button",
-        href: "https://www.creative-tim.com/learning-lab/react/social-buttons/material-dashboard/",
-      },
-      {
-        name: "Typography",
-        key: "typography",
-        href: "https://www.creative-tim.com/learning-lab/react/typography/material-dashboard/",
-      },
-    ],
-  },
-  {
-    type: "collapse",
-    name: "Change Log",
-    key: "changelog",
-    href: "https://github.com/creativetimofficial/ct-material-dashboard-pro-react/blob/main/CHANGELOG.md",
-    icon: <Icon fontSize="small">receipt_long</Icon>,
-    noCollapse: true,
-  },
+    name: "Home",
+    icon: <HomeIcon />,
+    route: "/home",
+    component: <Page />,
+  }
+  // {
+  //   name: "pages",
+  //   icon: <Icon>dashboard</Icon>,
+  //   columns: 3,
+  //   rowsPerColumn: 2,
+  //   collapse: [
+  //     {
+  //       name: "landing pages",
+  //       collapse: [
+  //         {
+  //           name: "coworking",
+  //           route: "/pages/landing-pages/coworking",
+  //           component: <CoworkingPage />,
+  //         },
+  //         {
+  //           name: "rental",
+  //           route: "/pages/landing-pages/rental",
+  //           component: <Rental />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "company",
+  //       collapse: [
+  //         {
+  //           name: "about us",
+  //           route: "/pages/company/about-us",
+  //           component: <AboutUs />,
+  //         },
+  //         {
+  //           name: "pricing",
+  //           route: "/pages/company/pricing",
+  //           component: <Pricing />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "support",
+  //       collapse: [
+  //         {
+  //           name: "help center",
+  //           route: "/pages/support/help-center",
+  //           component: <HelpCenter />,
+  //         },
+  //         {
+  //           name: "contact us",
+  //           route: "/pages/support/contact-us",
+  //           component: <ContactUs />,
+  //         },
+  //         {
+  //           name: "faq",
+  //           route: "/pages/support/faq",
+  //           component: <Faq />,
+  //         },
+  //         {
+  //           name: "privacy",
+  //           route: "/pages/support/privacy",
+  //           component: <Privacy />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "apps",
+  //       collapse: [
+  //         {
+  //           name: "desktop app",
+  //           route: "/pages/apps/desktop-app",
+  //           component: <DesktopApp />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "blogs",
+  //       collapse: [
+  //         {
+  //           name: "single article",
+  //           route: "/pages/blogs/single-article",
+  //           component: <SingleArticle />,
+  //         },
+  //         {
+  //           name: "author",
+  //           route: "/pages/blogs/author",
+  //           component: <Author />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "extra",
+  //       collapse: [
+  //         {
+  //           name: "virtual reality",
+  //           route: "/pages/extra/virtual-reality",
+  //           component: <VirtualRealityPage />,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "account",
+  //   icon: <Icon>contacts</Icon>,
+  //   collapse: [
+  //     {
+  //       name: "sign in",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "basic",
+  //           route: "/authentication/sign-in/basic",
+  //           component: <SignInBasicPage />,
+  //         },
+  //         {
+  //           name: "cover",
+  //           route: "/authentication/sign-in/cover",
+  //           component: <SignInCoverPage />,
+  //         },
+  //         {
+  //           name: "illustration",
+  //           route: "/authentication/sign-in/illustration",
+  //           component: <SignInIllustration />,
+  //         },
+  //         {
+  //           name: "simple",
+  //           route: "/authentication/sign-in/simple",
+  //           component: <SignInSimplePage />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "sign up",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "cover",
+  //           route: "/authentication/sign-up/cover",
+  //           component: <SignUpCoverPage />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "reset password",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "cover",
+  //           route: "/authentication/reset-password/cover",
+  //           component: <ResetPasswordPage />,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "sections",
+  //   icon: <Icon>view_day</Icon>,
+  //   collapse: [
+  //     {
+  //       name: "page sections",
+  //       description: "See all 55 sections",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "page headers",
+  //           route: "/sections/page-sections/page-headers",
+  //           component: <PageHeaders />,
+  //         },
+  //         {
+  //           name: "features",
+  //           route: "/sections/page-sections/features",
+  //           component: <Features />,
+  //         },
+  //         {
+  //           name: "pricing",
+  //           route: "/sections/page-sections/pricing",
+  //           component: <PricingSection />,
+  //         },
+  //         {
+  //           name: "faq",
+  //           route: "/sections/page-sections/faq",
+  //           component: <FaqSection />,
+  //         },
+  //         {
+  //           name: "blog posts",
+  //           route: "/sections/page-sections/blog-posts",
+  //           component: <BlogPosts />,
+  //         },
+  //         {
+  //           name: "testimonials",
+  //           route: "/sections/page-sections/testimonials",
+  //           component: <Testimonials />,
+  //         },
+  //         {
+  //           name: "teams",
+  //           route: "/sections/page-sections/teams",
+  //           component: <Teams />,
+  //         },
+  //         {
+  //           name: "stats",
+  //           route: "/sections/page-sections/stats",
+  //           component: <Stats />,
+  //         },
+  //         {
+  //           name: "call to actions",
+  //           route: "/sections/page-sections/cta",
+  //           component: <Cta />,
+  //         },
+  //         {
+  //           name: "applications",
+  //           route: "/sections/page-sections/applications",
+  //           component: <Applications />,
+  //         },
+  //         {
+  //           name: "logo areas",
+  //           route: "/sections/page-sections/logo-areas",
+  //           component: <LogoAreas />,
+  //         },
+  //         {
+  //           name: "footers",
+  //           route: "/sections/page-sections/footers",
+  //           component: <Footers />,
+  //         },
+  //         {
+  //           name: "general cards",
+  //           route: "/sections/page-sections/general-cards",
+  //           component: <GeneralCards />,
+  //         },
+  //         {
+  //           name: "content sections",
+  //           route: "/sections/page-sections/content-sections",
+  //           component: <ContentSections />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "navigation",
+  //       description: "See all 3 navigations",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "navbars",
+  //           route: "/sections/navigation/navbars",
+  //           component: <Navbars />,
+  //         },
+  //         {
+  //           name: "nav tabs",
+  //           route: "/sections/navigation/nav-tabs",
+  //           component: <NavTabs />,
+  //         },
+  //         {
+  //           name: "pagination",
+  //           route: "/sections/navigation/pagination",
+  //           component: <Pagination />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "input areas",
+  //       description: "See all 8 input areas",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "newsletters",
+  //           route: "/sections/input-areas/newsletters",
+  //           component: <Newsletters />,
+  //         },
+  //         {
+  //           name: "contact sections",
+  //           route: "/sections/input-areas/contact-sections",
+  //           component: <ContactSections />,
+  //         },
+  //         {
+  //           name: "inputs",
+  //           route: "/sections/input-areas/inputs",
+  //           component: <Inputs />,
+  //         },
+  //         {
+  //           name: "forms",
+  //           route: "/sections/input-areas/forms",
+  //           component: <Forms />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "attention catchers",
+  //       description: "See all 5 examples",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "alerts",
+  //           route: "/sections/attention-catchers/alerts",
+  //           component: <Alerts />,
+  //         },
+  //         {
+  //           name: "notifications",
+  //           route: "/sections/attention-catchers/notifications",
+  //           component: <Notifications />,
+  //         },
+  //         {
+  //           name: "modals",
+  //           route: "/sections/attention-catchers/modals",
+  //           component: <Modals />,
+  //         },
+  //         {
+  //           name: "tooltips & popovers",
+  //           route: "/sections/attention-catchers/tooltips-popovers",
+  //           component: <TooltipsPopovers />,
+  //         },
+  //       ],
+  //     },
+  //     {
+  //       name: "elements",
+  //       description: "See all 32 examples",
+  //       dropdown: true,
+  //       collapse: [
+  //         {
+  //           name: "avatars",
+  //           route: "/sections/elements/avatars",
+  //           component: <Avatars />,
+  //         },
+  //         {
+  //           name: "badges",
+  //           route: "/sections/elements/badges",
+  //           component: <Badges />,
+  //         },
+  //         {
+  //           name: "breadcrumbs",
+  //           route: "/sections/elements/breadcrumbs",
+  //           component: <BreadcrumbsEl />,
+  //         },
+  //         {
+  //           name: "buttons",
+  //           route: "/sections/elements/buttons",
+  //           component: <Buttons />,
+  //         },
+  //         {
+  //           name: "dropdowns",
+  //           route: "/sections/elements/dropdowns",
+  //           component: <Dropdowns />,
+  //         },
+  //         {
+  //           name: "progress bars",
+  //           route: "/sections/elements/progress-bars",
+  //           component: <ProgressBars />,
+  //         },
+  //         {
+  //           name: "social buttons",
+  //           route: "/sections/elements/social-buttons",
+  //           component: <SocialButtons />,
+  //         },
+  //         {
+  //           name: "tables",
+  //           route: "/sections/elements/tables",
+  //           component: <Tables />,
+  //         },
+  //         {
+  //           name: "toggles",
+  //           route: "/sections/elements/toggles",
+  //           component: <Toggles />,
+  //         },
+  //         {
+  //           name: "typography",
+  //           route: "/sections/elements/typography",
+  //           component: <Typography />,
+  //         },
+  //       ],
+  //     },
+  //   ],
+  // },
+  // {
+  //   name: "docs",
+  //   icon: <Icon>article</Icon>,
+  //   collapse: [
+  //     {
+  //       name: "getting started",
+  //       description: "All about overview, quick start, license and contents",
+  //       href: "https://www.creative-tim.com/learning-lab/react/quick-start/material-kit/",
+  //     },
+  //     {
+  //       name: "foundation",
+  //       description: "See our colors, icons and typography",
+  //       href: "https://www.creative-tim.com/learning-lab/react/colors/material-kit/",
+  //     },
+  //     {
+  //       name: "components",
+  //       description: "Explore our collection of fully designed components",
+  //       href: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
+  //     },
+  //     {
+  //       name: "plugins",
+  //       description: "Check how you can integrate our plugins",
+  //       href: "https://www.creative-tim.com/learning-lab/react/datepicker/material-kit/",
+  //     },
+  //   ],
+  // },
 ];
 
 export default routes;

@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -13,17 +13,17 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Dashboard 3 PRO React Base Styles
+// Material Kit 2 PRO React Base Styles
 import colors from "assets/theme/base/colors";
 import typography from "assets/theme/base/typography";
 
-// Material Dashboard 3 PRO React Helper Functions
+// Material Kit 2 PRO React Helper Functions
 import pxToRem from "assets/theme/functions/pxToRem";
 
 const { text, info, secondary, transparent } = colors;
 const { size } = typography;
 
-const buttonText = {
+export default {
   base: {
     backgroundColor: transparent.main,
     minHeight: pxToRem(40),
@@ -100,5 +100,3 @@ const buttonText = {
     },
   },
 };
-
-export default buttonText;

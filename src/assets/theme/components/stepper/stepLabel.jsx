@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -13,24 +13,24 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Dashboard 3 PRO React base styles
+// Material Kit 2 PRO React base styles
 import typography from "assets/theme/base/typography";
 import colors from "assets/theme/base/colors";
 
-// Material Dashboard 3 PRO React helper functions
+// Material Kit 2 PRO React helper functions
 import pxToRem from "assets/theme/functions/pxToRem";
 import rgba from "assets/theme/functions/rgba";
 
 const { size, fontWeightRegular } = typography;
 const { white } = colors;
 
-const stepLabel = {
+export default {
   styleOverrides: {
     label: {
       marginTop: `${pxToRem(8)} !important`,
       fontWeight: fontWeightRegular,
       fontSize: size.xs,
-      color: "#ffffffa0",
+      color: "#9fc9ff",
       textTransform: "uppercase",
 
       "&.Mui-active": {
@@ -45,5 +45,3 @@ const stepLabel = {
     },
   },
 };
-
-export default stepLabel;

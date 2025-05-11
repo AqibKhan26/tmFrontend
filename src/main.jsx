@@ -1,14 +1,13 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
-import { MaterialUIControllerProvider } from "context";
-import { HashRouter } from "react-router-dom";
+import React from "react";
+import * as ReactDOMClient from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import App from "App";
 
-createRoot(document.getElementById('root')).render(
-  <HashRouter>
-    <MaterialUIControllerProvider>
-      <App />
-    </MaterialUIControllerProvider>
-  </HashRouter>
-)
+const container = document.getElementById("root");
+const root = ReactDOMClient.createRoot(container);
+
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);

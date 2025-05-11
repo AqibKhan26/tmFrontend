@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 3 PRO React - v2.4.0
+* Material Kit 2 PRO React - v2.1.1
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-pro-react
+* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
 * Copyright 2024 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -13,23 +13,19 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-// Material Dashboard 3 PRO React base styles
+// Material Kit 2 PRO React base styles
 import colors from "assets/theme/base/colors";
 
-// Material Dashboard 3 PRO React helper functions
+// Material Kit 2 PRO React helper functions
 import rgba from "assets/theme/functions/rgba";
 import pxToRem from "assets/theme/functions/pxToRem";
 
-const { dark, transparent, white } = colors;
+const { dark, white } = colors;
 
-const divider = {
+export default {
   styleOverrides: {
     root: {
-      backgroundColor: transparent.main,
-      backgroundImage: `linear-gradient(to right, ${rgba(dark.main, 0)}, ${rgba(
-        dark.main,
-        0.4
-      )}, ${rgba(dark.main, 0)}) !important`,
+      background: rgba(dark.main, 0.2),
       height: pxToRem(1),
       margin: `${pxToRem(16)} 0`,
       borderBottom: "none",
@@ -37,11 +33,7 @@ const divider = {
     },
 
     vertical: {
-      backgroundColor: transparent.main,
-      backgroundImage: `linear-gradient(to bottom, ${rgba(dark.main, 0)}, ${rgba(
-        dark.main,
-        0.4
-      )}, ${rgba(dark.main, 0)}) !important`,
+      background: rgba(dark.main, 0.2),
       width: pxToRem(1),
       height: "100%",
       margin: `0 ${pxToRem(16)}`,
@@ -49,20 +41,11 @@ const divider = {
     },
 
     light: {
-      backgroundColor: transparent.main,
-      backgroundImage: `linear-gradient(to right, ${rgba(white.main, 0)}, ${white.main}, ${rgba(
-        white.main,
-        0
-      )}) !important`,
+      background: rgba(white.main, 0.2),
 
       "&.MuiDivider-vertical": {
-        backgroundImage: `linear-gradient(to bottom, ${rgba(white.main, 0)}, ${white.main}, ${rgba(
-          white.main,
-          0
-        )}) !important`,
+        background: rgba(white.main, 0.2),
       },
     },
   },
 };
-
-export default divider;
