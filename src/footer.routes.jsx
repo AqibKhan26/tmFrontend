@@ -39,16 +39,16 @@ export default {
     {
       name: "company",
       items: [
-        { name: "Home", href: "/home" },
-        { name: "Contact Us", href: "/home" }
+        { name: "Home", href: "/tmFrontend/home" },
+        { name: "Contact Us", href: "/tmFrontend/home" }
       ],
     },
     {
       name: "Travel With Us",
       items: [
-        { name: "Thailand", href: "/home" },
-        { name: "Vietnam", href: "/home" },
-        { name: "Kenya", href: "/home" },
+        { name: "Thailand", href: "/tmFrontend/thailand" },
+        { name: "Vietnam", href: "/tmFrontend/vietnam" },
+        { name: "Kenya", href: "/tmFrontend/kenya" },
       ],
     }
   ],

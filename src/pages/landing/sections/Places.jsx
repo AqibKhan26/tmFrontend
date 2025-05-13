@@ -24,8 +24,8 @@ import MKTypography from "components/MKTypography";
 import SimpleBookingCard from "sections/Cards/BookingCards/SimpleBookingCard";
 
 // Images
-import product1 from "assets/images/products/product-1-min.jpg";
-import product2 from "assets/images/products/product-2-min.jpeg";
+import thailandPic from "assets/images/products/product-1-min.jpg";
+import vietnamPic from "assets/images/products/product-2-min.jpeg";
 import kenyaPic from "assets/images/products/product-3-min.jpeg";
 
 function Places() {
@@ -67,13 +67,13 @@ function Places() {
             mt={3}
           >
             <SimpleBookingCard
-              image={product2}
+              image={vietnamPic}
               title="Vietnam"
               description="Explore Vietnam in 5 days! Discover Hanoi’s rich history, cruise the stunning Halong Bay, trek Mua Cave, visit ancient Trang An, and experience vibrant Ho Chi Minh City. Perfect blend of culture, nature & adventure with comfort—ideal for groups!"
               categories={["5 Days", "4 Nights", "Starting ₹ 22,999"]}
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/rental",
+                route: "/vietnam",
                 color: "info",
                 label: "More Details",
               }}
@@ -87,13 +87,13 @@ function Places() {
             mt={3}
           >
             <SimpleBookingCard
-              image={product1}
+              image={thailandPic}
               title="Thailand"
               description="Experience the best of Thailand in 5 days! Visit Pattaya’s Tiger Topia, Coral Island, and Big Buddha; enjoy the floating market, Safari World, and Bangkok’s iconic temples. Optional pirate boat dinner cruise!"
               categories={["5 Days", "4 Nights", "Starting ₹ 18,999"]}
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/rental",
+                route: "/thailand",
                 color: "info",
                 label: "More Details",
               }}
@@ -113,7 +113,7 @@ function Places() {
               categories={["8 Days", "7 Nights", "Starting ₹ 69,999"]}
               action={{
                 type: "internal",
-                route: "/pages/landing-pages/rental",
+                route: "/kenya",
                 color: "info",
                 label: "More Details",
               }}

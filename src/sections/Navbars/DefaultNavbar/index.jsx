@@ -297,7 +297,7 @@ function DefaultNavbar({
       anchorEl={dropdown}
       popperRef={null}
       open={Boolean(dropdown)}
-      placement="top-start"
+      placement="bottom-start"
       transition
       style={{ zIndex: 10 }}
       modifiers={[
@@ -427,7 +427,7 @@ function DefaultNavbar({
       anchorEl={nestedDropdown}
       popperRef={null}
       open={Boolean(nestedDropdown)}
-      placement="right-start"
+      placement="top-start"
       transition
       style={{ zIndex: 10 }}
       onMouseEnter={() => {

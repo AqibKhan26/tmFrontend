@@ -22,6 +22,7 @@ import { Link } from "react-router-dom";
 // @mui material components
 import Collapse from "@mui/material/Collapse";
 import Icon from "@mui/material/Icon";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 // Material Kit 2 PRO React components
 import MKBox from "components/MKBox";
@@ -52,46 +53,66 @@ function DefaultNavbarDropdown({
 
   return (
     <>
-      <MKBox
-        {...rest}
-        mx={1}
-        p={1}
-        display="flex"
-        alignItems="baseline"
-        color={light ? "white" : "dark"}
-        opacity={light ? 1 : 0.6}
-        sx={{ cursor: "pointer", userSelect: "none" }}
-        {...(route && routeComponent)}
-        {...(href && linkComponent)}
-      >
-        <MKTypography
-          variant="body2"
-          lineHeight={1}
-          color="inherit"
-          sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
-        >
-          {icon}
-        </MKTypography>
-        <MKTypography
-          variant="button"
-          fontWeight="regular"
-          textTransform="capitalize"
+      <MKBox position="relative" display="inline-block">
+        <MKBox
+          {...rest}
+          mx={1}
+          p={1}
+          display="flex"
+          alignItems="center"
           color={light ? "white" : "dark"}
-          sx={{ fontWeight: "100%", ml: 1, mr: 0.25 }}
+          opacity={light ? 1 : 0.6}
+          sx={{ cursor: "pointer", userSelect: "none" }}
+          {...(route && routeComponent)}
+          {...(href && linkComponent)}
         >
-          {name}
-        </MKTypography>
-        <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
-          <Icon sx={{ fontWeight: "normal", verticalAlign: "middle" }}>
-            {collapse && "keyboard_arrow_down"}
-          </Icon>
-        </MKTypography>
+          <MKTypography
+            variant="body2"
+            lineHeight={1}
+            color="inherit"
+            sx={{ alignSelf: "center", "& *": { verticalAlign: "middle" } }}
+          >
+            {icon}
+          </MKTypography>
+          <MKTypography
+            variant="button"
+            fontWeight="regular"
+            textTransform="capitalize"
+            color={light ? "white" : "dark"}
+            sx={{ fontWeight: "100%", ml: 1, mr: 0.25 }}
+          >
+            {name}
+          </MKTypography>
+          <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
+            {collapse && (
+              <KeyboardArrowDownIcon
+                sx={{ fontWeight: "normal", verticalAlign: "middle" }}
+              />
+            )}
+          </MKTypography>
+        </MKBox>
+
+        {children && (
+          <Collapse
+            in={Boolean(collapseStatus)}
+            timeout={400}
+            unmountOnExit
+            sx={{
+              position: "absolute",
+              top: "100%",
+              left: 0,
+              zIndex: 10,
+              minWidth: "200px",
+              bgcolor: "background.paper",
+              boxShadow: 3,
+              borderRadius: 1,
+              mt: 1,
+            }}
+          >
+            {children}
+          </Collapse>
+        )}
       </MKBox>
-      {children && (
-        <Collapse in={Boolean(collapseStatus)} timeout={400} unmountOnExit>
-          {children}
-        </Collapse>
-      )}
     </>
   );
 }
