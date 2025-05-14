@@ -6,6 +6,13 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 // Material Kit 2 PRO React components
 import MKTypography from "components/MKTypography";
+import Page from "pages/landing";
+import KenyaTripDetail from "pages/kenyatripdetail";
+import ThailandTripDetail from "pages/thailandtripdetail";
+import VietnamTripDetail from "pages/vietnamtripdetail";
+import HomeIcon from "@mui/icons-material/Home";
+import LocalAirportIcon from '@mui/icons-material/LocalAirport';
+
 
 // Images
 import logoCT from "assets/images/tripmaster.inLogoTransparent.png";
@@ -16,6 +23,7 @@ export default {
   brand: {
     image: logoCT,
     route: "/",
+    component: <Page />,
   },
   socials: [
     // {
@@ -39,16 +47,16 @@ export default {
     {
       name: "company",
       items: [
-        { name: "Home", href: "/home" },
-        { name: "Contact Us", href: "/home" }
+        { name: "Home", component: <Page /> },
+        { name: "Contact Us", component: <Page /> }
       ],
     },
     {
       name: "Travel With Us",
       items: [
-        { name: "Thailand", href: "/thailand" },
-        { name: "Vietnam", href: "/vietnam" },
-        { name: "Kenya", href: "/kenya" },
+        { name: "Thailand", component: <ThailandTripDetail /> },
+        { name: "Vietnam",  component: <VietnamTripDetail /> },
+        { name: "Kenya", component: <KenyaTripDetail /> },
       ],
     }
   ],
