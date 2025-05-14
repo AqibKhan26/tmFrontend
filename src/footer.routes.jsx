@@ -22,8 +22,7 @@ const date = new Date().getFullYear();
 export default {
   brand: {
     image: logoCT,
-    route: "/",
-    component: <Page />,
+    route: "/home",
   },
   socials: [
     // {
@@ -47,16 +46,16 @@ export default {
     {
       name: "company",
       items: [
-        { name: "Home", component: <Page /> },
-        { name: "Contact Us", component: <Page /> }
+        { name: "Home", href: "/home" },
+        { name: "Contact Us", href: "/home" }
       ],
     },
     {
       name: "Travel With Us",
       items: [
-        { name: "Thailand", component: <ThailandTripDetail /> },
-        { name: "Vietnam",  component: <VietnamTripDetail /> },
-        { name: "Kenya", component: <KenyaTripDetail /> },
+        { name: "Thailand", href: "/thailand" },
+        { name: "Vietnam", href: "/vietnam" },
+        { name: "Kenya", href: "/kenya" },
       ],
     }
   ],
