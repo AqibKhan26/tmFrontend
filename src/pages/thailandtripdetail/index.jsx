@@ -33,7 +33,7 @@ import DefaultFooter from "sections/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/thailandtripdetail/sections/Information";
-
+import Tabs from "pages/thailandtripdetail/sections/Tabs";
 
 // Routes
 import routes from "routes";
@@ -111,6 +111,7 @@ function SingleArticle() {
         }}
       >
         <Information />
+        <Tabs />
       </Card>
     </>
   );

@@ -33,6 +33,7 @@ import DefaultFooter from "sections/Footers/DefaultFooter";
 
 // About Us page sections
 import Information from "pages/vietnamtripdetail/sections/Information";
+import Tabs from "pages/vietnamtripdetail/sections/Tabs";
 
 
 // Routes
@@ -125,6 +126,7 @@ function SingleArticle() {
         }}
       >
         <Information />
+        <Tabs />
       </Card>
     </>
   );

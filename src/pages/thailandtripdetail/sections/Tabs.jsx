@@ -8,12 +8,12 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
+import Gallery from "pages/thailandtripdetail/sections/Gallery";
 
 // Example components to render
 
 function Timeline() {
-  return <Box p={2}>Timeline content will be coming soon here.</Box>;
+  return <Box p={2}>Timeline content will be here.</Box>;
 }
 
 function TabsSimple() {

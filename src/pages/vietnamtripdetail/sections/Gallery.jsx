@@ -4,19 +4,15 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
+import vietnamGalleryOne from "assets/images/products/vietnamGalleryOne.png";
+import vietnamGalleryTwo from "assets/images/products/vietnamGalleryTwo.png";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
+        vietnamGalleryOne,
+        vietnamGalleryTwo,
     ];
 
     const handleOpen = (index) => {
