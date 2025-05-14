@@ -6,7 +6,6 @@ import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/tmFrontend/',
   plugins: [react(), jsconfigPaths(), nodePolyfills()],
   define: {
     global: 'globalThis', // ✅ Fix for "global is not defined"
