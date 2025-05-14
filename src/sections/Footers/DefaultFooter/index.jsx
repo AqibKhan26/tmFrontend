@@ -110,13 +110,6 @@ function DefaultFooter({ content }) {
               ))}
             </Grid>
           </Grid>
-
-          {/* Full-width Copyright (below both sections) */}
-          <Grid item xs={12} mt={4}>
-            <MKTypography variant="body2" color="text" textAlign="center">
-              {copyright}
-            </MKTypography>
-          </Grid>
         </Grid>
       </Container>
     </MKBox>

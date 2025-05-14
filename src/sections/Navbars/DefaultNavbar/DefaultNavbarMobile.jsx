@@ -49,7 +49,7 @@ function DefaultNavbarMobile({ routes, open }) {
         route={route}
         collapse={Boolean(navCollapse)}
       >
-        <MKBox sx={{ height: "15rem", maxHeight: "15rem", overflowY: "scroll" }}>
+        <MKBox>
           {routeCollapses &&
             routeCollapses.map((item) => (
               <MKBox key={item.name} px={2}>
@@ -150,7 +150,7 @@ function DefaultNavbarMobile({ routes, open }) {
 
   return (
     <Collapse in={Boolean(open)} timeout="auto" unmountOnExit>
-      <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2}>
+      <MKBox width="calc(100% + 1.625rem)" my={2} ml={-2} display="flex" flexDirection="column" gap={0.5}>
         {renderNavbarItems}
       </MKBox>
     </Collapse>

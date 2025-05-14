@@ -84,11 +84,7 @@ function DefaultNavbarDropdown({
             {name}
           </MKTypography>
           <MKTypography variant="body2" color={light ? "white" : "dark"} ml="auto">
-            {collapse && (
-              <KeyboardArrowDownIcon
-                sx={{ fontWeight: "normal", verticalAlign: "middle" }}
-              />
-            )}
+            {collapse}
           </MKTypography>
         </MKBox>
 

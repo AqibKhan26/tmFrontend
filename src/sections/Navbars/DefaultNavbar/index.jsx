@@ -104,6 +104,7 @@ function DefaultNavbar({
       route={route}
       collapse={Boolean(collapse)}
       onMouseEnter={({ currentTarget }) => {
+        console.log(currentTarget.getBoundingClientRect());
         if (collapse) {
           setDropdown(currentTarget);
           setDropdownEl(currentTarget);
@@ -297,18 +298,10 @@ function DefaultNavbar({
       anchorEl={dropdown}
       popperRef={null}
       open={Boolean(dropdown)}
+      disablePortal={false}
       placement="bottom-start"
       transition
       style={{ zIndex: 10 }}
-      modifiers={[
-        {
-          name: "arrow",
-          enabled: true,
-          options: {
-            element: arrowRef,
-          },
-        },
-      ]}
       onMouseEnter={() => setDropdown(dropdownEl)}
       onMouseLeave={() => {
         if (!nestedDropdown) {
@@ -326,9 +319,6 @@ function DefaultNavbar({
           }}
         >
           <MKBox borderRadius="lg">
-            <MKTypography variant="h1" color="white">
-              <ArrowDropUpIcon ref={setArrowRef} sx={{ mt: -3 }} />
-            </MKTypography>
             <MKBox shadow="lg" borderRadius="lg" p={2} mt={2}>
               {renderRoutes}
             </MKBox>

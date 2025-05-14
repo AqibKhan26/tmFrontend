@@ -56,12 +56,6 @@ function SingleArticle() {
 
   return (
     <>
-      <DefaultNavbar
-        brand="TripMaster.in"
-        routes={routes}
-        transparent
-        light
-      />
       <MKBox
         ref={headerRef}
         minHeight="85vh"
@@ -118,9 +112,6 @@ function SingleArticle() {
       >
         <Information />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
     </>
   );
 }

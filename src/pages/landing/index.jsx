@@ -23,9 +23,6 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 // Material Kit 2 PRO React examples
-import DefaultNavbar from "sections/Navbars/DefaultNavbar";
-import DefaultFooter from "sections/Footers/DefaultFooter";
-
 // Rental page sections
 import Places from "pages/landing/sections/Places";
 import Contact from "pages/landing/sections/Contact";
@@ -41,12 +38,11 @@ import { column } from "stylis";
 function Landing() {
   return (
     <>
-      <DefaultNavbar
+      {/* <DefaultNavbar
         brand="TripMaster.in"
         routes={routes}
         transparent
-        light
-      />
+      /> */}
       <MKBox
         minHeight="50vh"
         width="100%"
@@ -104,9 +100,6 @@ function Landing() {
         <Places />
         <Contact />
       </Card>
-      <MKBox pt={6} px={1} mt={6}>
-        <DefaultFooter content={footerRoutes} />
-      </MKBox>
     </>
   );
 }
