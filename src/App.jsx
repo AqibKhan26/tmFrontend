@@ -19,6 +19,8 @@ import Page from "pages/landing";
 import DefaultNavbar from "sections/Navbars/DefaultNavbar";
 import DefaultFooter from "sections/Footers/DefaultFooter";
 
+import logoCT from "assets/images/tripmaster.inLogoTransparentWhite.png";
+
 export default function App() {
   const { pathname } = useLocation();
 
@@ -50,6 +52,7 @@ export default function App() {
         routes={routes}
         transparent
         light
+        image={logoCT}
       />
       <Routes>
         {getRoutes(routes)}

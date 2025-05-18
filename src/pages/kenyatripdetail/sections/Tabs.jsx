@@ -9,12 +9,9 @@ import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
 
 import Gallery from "pages/kenyatripdetail/sections/Gallery";
+import Timeline from "pages/kenyatripdetail/sections/Timeline";
 
 // Example components to render
-
-function Timeline() {
-  return <Box p={2}>Timeline content will be coming soon here.</Box>;
-}
 
 function TabsSimple() {
   const [activeTab, setActiveTab] = useState(0);

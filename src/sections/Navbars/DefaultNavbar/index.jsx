@@ -50,6 +50,7 @@ import breakpoints from "assets/theme/base/breakpoints";
 
 function DefaultNavbar({
   brand = "Material Kit 2",
+  image,
   routes,
   transparent = false,
   light = false,
@@ -474,10 +475,8 @@ function DefaultNavbar({
             py={transparent ? 1.5 : 0.75}
             pl={relative || transparent ? 0 : { xs: 0, lg: 1 }}
           >
-            <MKTypography variant="button" fontWeight="bold" color={light ? "white" : "dark"}>
-              {brand}
-            </MKTypography>
-          </MKBox>
+            <MKBox component="img" src={image} alt={brand} width="10rem" mb={1} />
+           </MKBox>
           <MKBox
             color="inherit"
             display={{ xs: "none", lg: "flex" }}
@@ -554,6 +553,7 @@ function DefaultNavbar({
 // Typechecking props for the DefaultNavbar
 DefaultNavbar.propTypes = {
   brand: PropTypes.string,
+  image: PropTypes.string,
   routes: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired,
   transparent: PropTypes.bool,
   light: PropTypes.bool,

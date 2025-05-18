@@ -33,10 +33,15 @@ function DefaultFooter({ content }) {
   return (
     <MKBox component="footer" py={4}>
       <Container>
-        <Grid container justifyContent="space-between" alignItems="flex-start">
+        <Grid container justifyContent="space-between" alignItems={{ xs: "center", md: "flex-start" }} flexDirection={{ xs: "column", md: "row" }}>
           {/* Left Side: Logo + Socials */}
           <Grid item xs={12} md={4}>
-            <MKBox display="flex" flexDirection="column" alignItems="flex-start" textAlign="left">
+            <MKBox
+              display="flex"
+              flexDirection="column"
+              alignItems={{ xs: "center", md: "flex-start" }}
+              textAlign={{ xs: "center", md: "left" }}
+            >
               <Link to={brand.route}>
                 <MKBox component="img" src={brand.image} alt={brand.name} width="10rem" mb={1} />
               </Link>
@@ -64,7 +69,7 @@ function DefaultFooter({ content }) {
 
           {/* Right Side: Menus */}
           <Grid item xs={12} md={8}>
-            <Grid container spacing={3} justifyContent="flex-end">
+            <Grid container spacing={3} justifyContent={{ xs: "center", md: "flex-end" }} flexDirection={{ xs: "column", md: "row" }}>
               {menus.map(({ name: title, items }) => (
                 <Grid key={title} item xs={6} sm={4} md={3}>
                   <MKTypography
@@ -74,10 +79,20 @@ function DefaultFooter({ content }) {
                     textTransform="capitalize"
                     mb={1}
                     color="dark"
+                    textAlign={{ xs: "center", md: "left" }}
                   >
                     {title}
                   </MKTypography>
-                  <MKBox component="ul" p={0} m={0} sx={{ listStyle: "none" }}>
+                  <MKBox
+                    component="ul"
+                    p={0}
+                    m={0}
+                    sx={{
+                      listStyle: "none",
+                      textAlign: { xs: "center", md: "left" },
+                      paddingInlineStart: 0,
+                    }}
+                  >
                     {items.map(({ name, route, href }) => (
                       <MKBox key={name} component="li" py={0.5}>
                         {href ? (

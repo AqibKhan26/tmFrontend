@@ -44,7 +44,7 @@ function Landing() {
         transparent
       /> */}
       <MKBox
-        minHeight="50vh"
+        minHeight="60vh"
         width="100%"
         sx={{
           backgroundImage: ({ functions: { linearGradient, rgba }, palette: { gradients } }) =>

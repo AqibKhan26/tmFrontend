@@ -8,6 +8,9 @@ import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
 import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
 import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
 import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
+import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
+import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
+import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
@@ -17,6 +20,9 @@ function Gallery() {
         kenyaGalleryTwo,
         kenyaGalleryThree,
         kenyaGalleryFour,
+        argyleHotel,
+        cliffHotel,
+        ashnilCamp,
     ];
 
     const handleOpen = (index) => {
