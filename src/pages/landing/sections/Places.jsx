@@ -110,7 +110,7 @@ function Places() {
               image={kenyaPic}
               title="Kenya"
               description="Experience the thrill of Kenya’s wild beauty on this 8-day journey. Explore Nairobi, Lake Nakuru, and the legendary Masai Mara in a private 4x4. Enjoy luxury stays, stunning wildlife, and unforgettable moments in the heart of Africa."
-              categories={["8 Days", "7 Nights", "Starting ₹ 69,999"]}
+              categories={["8 Days", "7 Nights", "Starting ₹ 3,19,999"]}
               action={{
                 type: "internal",
                 route: "/kenya",

@@ -97,7 +97,7 @@ function SingleArticle() {
               8 Days 7 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 69,999
+              Starting from ₹ 3,19,999
             </MKTypography>
             <MKBox display="flex" alignItems="center">
               <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
