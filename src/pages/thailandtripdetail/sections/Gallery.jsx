@@ -6,6 +6,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import thailandGalleryOne from "assets/images/products/thailandGalleryOne.png";
 import thailandGalleryTwo from "assets/images/products/thailandGalleryTwo.png";
+import tigerPhotos from "assets/images/thailand/tigerPhotos.jpg";
+import coralIsland from "assets/images/thailand/coralIsland.jpg";
+import floatingMarket from "assets/images/thailand/floatingMarket.jpg";
+import bangkokCity from "assets/images/thailand/bangkokCity.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
@@ -13,6 +17,10 @@ function Gallery() {
     const images = [
         thailandGalleryOne,
         thailandGalleryTwo,
+        tigerPhotos,
+        coralIsland,
+        floatingMarket,
+        bangkokCity,
     ];
 
     const handleOpen = (index) => {

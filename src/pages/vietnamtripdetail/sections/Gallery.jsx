@@ -6,6 +6,11 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import vietnamGalleryOne from "assets/images/products/vietnamGalleryOne.png";
 import vietnamGalleryTwo from "assets/images/products/vietnamGalleryTwo.png";
+import hanoiCity from "assets/images/vietnam/hanoiCity.jpg";
+import ninhBinhProvince from "assets/images/vietnam/ninhBinhProvince.jpg";
+import halongBayCruise from "assets/images/vietnam/halongBayCruise.jpg";
+import hoChiMinhCity from "assets/images/vietnam/hoChiMinhCity.jpg";
+
 
 function Gallery() {
     const [open, setOpen] = useState(false);
@@ -13,6 +18,10 @@ function Gallery() {
     const images = [
         vietnamGalleryOne,
         vietnamGalleryTwo,
+        hanoiCity,
+        ninhBinhProvince,
+        halongBayCruise,
+        hoChiMinhCity,
     ];
 
     const handleOpen = (index) => {
