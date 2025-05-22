@@ -13,7 +13,7 @@ Coded by www.creative-tim.com
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 */
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // rellax
 import Rellax from "rellax";
@@ -26,19 +26,11 @@ import Card from "@mui/material/Card";
 // Material Kit 2 PRO React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 PRO React examples
-import DefaultNavbar from "sections/Navbars/DefaultNavbar";
-import DefaultFooter from "sections/Footers/DefaultFooter";
-
+import MKButton from "components/MKButton";
 // About Us page sections
 import Information from "pages/thailandtripdetail/sections/Information";
 import Tabs from "pages/thailandtripdetail/sections/Tabs";
-
-// Routes
-import routes from "routes";
-import footerRoutes from "footer.routes";
-
+import SimpleModal from "sections/BookNowModal";
 // Images
 import bgImage from "assets/images/products/product-1-min.jpg";
 
@@ -53,6 +45,9 @@ function SingleArticle() {
 
     return () => parallax.destroy();
   }, []);
+
+  const [showModal, setShowModal] = useState(false);
+  const toggleModal = () => setShowModal(!showModal);
 
   return (
     <>
@@ -98,6 +93,19 @@ function SingleArticle() {
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
               Starting from ₹ 18,999
             </MKTypography>
+            <MKButton
+              onClick={toggleModal}
+              sx={{
+                width: { xs: "100%", md: "200px" },
+                backgroundColor: "#56d4bf",
+                color: "white",
+                "&:hover": {
+                  backgroundColor: "#56d4bf" // disables hover effect by keeping the same color
+                }
+              }}
+            >
+              Book Now
+            </MKButton>
           </Grid>
         </Container>
       </MKBox>
@@ -113,6 +121,11 @@ function SingleArticle() {
         <Information />
         <Tabs />
       </Card>
+      <SimpleModal
+        show={showModal}
+        toggleModal={toggleModal}
+        defaultMessage="I'm interested in your adventure tours to Thailand."
+      />
     </>
   );
 }

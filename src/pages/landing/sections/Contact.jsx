@@ -167,9 +167,9 @@ function Contact() {
                       Fill up the form and our Team will get back to you within 24 hours.
                     </MKTypography>
                     <MKBox display="flex" p={1}>
-                      <MKTypography variant="button" color="white">
+                      {/* <MKTypography variant="button" color="white">
                         <i className="fas fa-phone" />
-                      </MKTypography>
+                      </MKTypography> */}
                       {/* <MKTypography
                         component="span"
                         variant="button"
@@ -233,6 +233,8 @@ function Contact() {
                           placeholder="Full Name"
                           InputLabelProps={{ shrink: true }}
                           fullWidth
+                          name="user_name"
+                          inputRef={userName}
                         />
                       </Grid>
                       <Grid item xs={12} pr={1} mb={6}>

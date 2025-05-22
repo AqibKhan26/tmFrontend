@@ -16,11 +16,11 @@ import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
 import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
 
 
-const SafariTimeline = () => {
+const KenyaTripTimeline = () => {
     return (
         <VerticalTimeline>
             <VerticalTimelineElement
-                date="Wed, 3 September"
+                date="Day 1"
                 icon={<FlightIcon />}
                 iconStyle={{ background: '#1976d2', color: '#fff' }}
             >
@@ -30,7 +30,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Wed, 3 September"
+                date="Day 1"
                 icon={<HotelIcon />}
                 iconStyle={{ background: '#388e3c', color: '#fff' }}
             >
@@ -44,7 +44,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Thu, 4 September"
+                date="Day 2"
                 icon={<DirectionsCarIcon />}
                 iconStyle={{ background: '#ff8f00', color: '#fff' }}
             >
@@ -53,7 +53,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Thu, 4 September"
+                date="Day 2"
                 icon={<HotelIcon />}
                 iconStyle={{ background: '#388e3c', color: '#fff' }}
             >
@@ -67,7 +67,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Fri, 5 September"
+                date="Day 3"
                 icon={<SafariIcon />}
                 iconStyle={{ background: '#6a1b9a', color: '#fff' }}
             >
@@ -76,7 +76,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Sat, 6 September"
+                date="Day 4"
                 icon={<DirectionsCarIcon />}
                 iconStyle={{ background: '#ff8f00', color: '#fff' }}
             >
@@ -85,7 +85,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Sat, 6 September"
+                date="Day 4"
                 icon={<HotelIcon />}
                 iconStyle={{ background: '#388e3c', color: '#fff' }}
             >
@@ -99,7 +99,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Sun, 7 September"
+                date="Day 5"
                 icon={<SafariIcon />}
                 iconStyle={{ background: '#6a1b9a', color: '#fff' }}
             >
@@ -108,7 +108,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Mon, 8 September"
+                date="Day 6"
                 icon={<SafariIcon />}
                 iconStyle={{ background: '#6a1b9a', color: '#fff' }}
             >
@@ -117,7 +117,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Tue, 9 September"
+                date="Day 7"
                 icon={<DirectionsCarIcon />}
                 iconStyle={{ background: '#ff8f00', color: '#fff' }}
             >
@@ -126,7 +126,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Tue, 9 September"
+                date="Day 8"
                 icon={<HotelIcon />}
                 iconStyle={{ background: '#388e3c', color: '#fff' }}
             >
@@ -135,7 +135,7 @@ const SafariTimeline = () => {
             </VerticalTimelineElement>
 
             <VerticalTimelineElement
-                date="Wed, 10 September"
+                date="Day 9"
                 icon={<FlightIcon />}
                 iconStyle={{ background: '#1976d2', color: '#fff' }}
             >
@@ -146,4 +146,4 @@ const SafariTimeline = () => {
     );
 };
 
-export default SafariTimeline;
+export default KenyaTripTimeline;

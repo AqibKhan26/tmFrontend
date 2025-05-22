@@ -6,15 +6,12 @@ import Grid from "@mui/material/Grid";
 import AppBar from "@mui/material/AppBar";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
 
 import Gallery from "pages/vietnamtripdetail/sections/Gallery";
+import VietnamTripTimeline from "pages/vietnamtripdetail/sections/Timeline";
 
 // Example components to render
 
-function Timeline() {
-  return <Box p={2}>Timeline content will be here.</Box>;
-}
 
 function TabsSimple() {
   const [activeTab, setActiveTab] = useState(0);
@@ -34,7 +31,7 @@ function TabsSimple() {
 
       <Grid container item xs={12} mt={4}>
         {activeTab === 0 && <Gallery />}
-        {activeTab === 1 && <Timeline />}
+        {activeTab === 1 && <VietnamTripTimeline />}
       </Grid>
     </Container>
   );
