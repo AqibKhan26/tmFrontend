@@ -15,7 +15,7 @@ import LocalAirportIcon from '@mui/icons-material/LocalAirport';
 
 
 // Images
-import logoCT from "assets/images/tripmaster.inLogoTransparent.png";
+import logoCT from "assets/images/tripmaster.inLogoTransparent2.png";
 
 const date = new Date().getFullYear();
 

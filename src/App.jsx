@@ -19,7 +19,7 @@ import Page from "pages/landing";
 import DefaultNavbar from "sections/Navbars/DefaultNavbar";
 import DefaultFooter from "sections/Footers/DefaultFooter";
 
-import logoCT from "assets/images/tripmaster.inLogoTransparentWhite.png";
+import logoCT from "assets/images/tripmaster.inLogoTransparentWhite2.png";
 
 export default function App() {
   const { pathname } = useLocation();
