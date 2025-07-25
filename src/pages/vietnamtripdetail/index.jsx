@@ -29,12 +29,15 @@ import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 
 // About Us page sections
-import Information from "pages/vietnamtripdetail/sections/Information";
-import Tabs from "pages/vietnamtripdetail/sections/Tabs";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
 import bgImage from "assets/images/products/product-2-min.jpeg";
+import Information from "components/Custom/Information";
+
+import Gallery from "pages/vietnamtripdetail/sections/Gallery";
+import VietnamTripTimeline from "pages/vietnamtripdetail/sections/Timeline";
+import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
   const headerRef = useRef(null);
@@ -120,8 +123,22 @@ function SingleArticle() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Tabs />
+        <Information
+          title="🇻🇳 Timeless Vietnam: A Premium 5 Days, 4 Nights Experience"
+          description={
+            <>
+              Hanoi • Ninh Binh • Halong Bay Cruise • Cultural Discovery • Scenic Landscapes
+              <br /> <br />
+              Step into the soul of Vietnam, where dramatic landscapes, ancient heritage, and vibrant modern life weave together into a magical journey. This thoughtfully curated 5D/4N group experience gives you the best of Northern Vietnam — breathtaking nature, rich culture, world-famous cuisine, and luxurious comfort.
+            </>
+          }
+        />
+        <TabsSimple
+          tabs={[
+            { label: "Gallery", component: <Gallery /> },
+            { label: "Timeline", component: <VietnamTripTimeline /> },
+          ]}
+        />
       </Card>
       <SimpleModal
         show={showModal}

@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import SingaporeTripTimeline from "pages/Singaporetripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Singapore
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              5 Days 4 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 36,900
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,25 +122,23 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🇸🇬 Singapore: 5 Days, 4 Nights City & Adventure Escape"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Night Safari • Sentosa Island • Universal Studios • Panoramic City Tour
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Explore the vibrant city-state of Singapore in this 5D/4N package that blends culture, adventure, and entertainment.
+              Experience the world’s first Night Safari, enjoy a panoramic city drive covering iconic landmarks, soar over Sentosa
+              in a cable car, and immerse yourself in thrills at Universal Studios Singapore.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              Perfect for families, couples, and explorers seeking a mix of urban charm, theme park fun, and unique wildlife encounters.
             </>
           }
         />
-
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <SingaporeTripTimeline /> },
           ]}
         />
       </Card>

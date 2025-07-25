@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import MalayasiaTripTimeline from "pages/malayasiatripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Malayasia
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              5 Days 4 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 16,500
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,25 +122,25 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🇲🇾 Kuala Lumpur & Genting Highlands: 5 Days, 4 Nights Malaysian Escape"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Kuala Lumpur • Genting Highlands • Batu Caves • Putrajaya
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Experience Malaysia’s vibrant capital and its cool hill resort getaway in this 5D/4N trip.
+              Explore the buzzing city of Kuala Lumpur with its skyscrapers and cultural landmarks, visit
+              the iconic Batu Caves, and enjoy the scenic Genting Highlands with its theme parks and
+              cable car ride.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              Perfect for travelers seeking a mix of city life, cultural experiences, and mountain
+              adventure in one itinerary.
             </>
           }
         />
-
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <MalayasiaTripTimeline /> },
           ]}
         />
       </Card>

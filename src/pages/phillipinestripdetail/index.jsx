@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import PhillipinesTripTimeline from "pages/phillipinestripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Phillipines
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              4 Days 3 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 39,900
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,25 +122,25 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🇵🇭 Manila & Tagaytay: 4 Days, 3 Nights Philippines Experience"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Manila • Intramuros • Tagaytay • Taal Volcano Crater
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Explore the rich history and natural beauty of the Philippines with this 4D/3N trip. Discover
+              Manila’s iconic landmarks, Spanish colonial architecture, and cultural gems. Enjoy a scenic
+              day trip to Tagaytay to witness the breathtaking Taal Volcano and experience farm-to-table
+              organic living.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              This private guided tour includes historical sites, cultural landmarks, and a relaxing countryside
+              experience with Indian lunches included.
             </>
           }
         />
-
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <PhillipinesTripTimeline /> },
           ]}
         />
       </Card>

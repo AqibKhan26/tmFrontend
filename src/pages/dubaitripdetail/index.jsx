@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import DubaiTripTimeline from "pages/dubaitripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Dubai
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              5 Days 4 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 29,990
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,17 +122,17 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🏜️ Dubai Desert Adventure: 2 Days of Culture & Thrill"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Dubai Desert Safari • Dubai Frame • Cultural Experiences
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Experience the best of Dubai with this short but adventure-packed 2-day itinerary. Dive into
+              the heart of the Arabian desert with dune bashing, camel rides, and cultural entertainment,
+              then witness the city’s past and future come together at the iconic Dubai Frame.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              Perfect for travelers seeking a quick yet immersive Dubai experience blending tradition,
+              adventure, and breathtaking skyline views.
             </>
           }
         />
@@ -140,7 +140,7 @@ function SingleArticle() {
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <DubaiTripTimeline /> },
           ]}
         />
       </Card>

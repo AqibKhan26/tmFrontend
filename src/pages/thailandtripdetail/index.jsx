@@ -28,11 +28,14 @@ import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import MKButton from "components/MKButton";
 // About Us page sections
-import Information from "pages/thailandtripdetail/sections/Information";
-import Tabs from "pages/thailandtripdetail/sections/Tabs";
 import SimpleModal from "sections/BookNowModal";
 // Images
 import bgImage from "assets/images/products/product-1-min.jpg";
+import Information from "components/Custom/Information";
+
+import Gallery from "pages/thailandtripdetail/sections/Gallery";
+import ThailandTripTimeline from "pages/thailandtripdetail/sections/Timeline";
+import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
   const headerRef = useRef(null);
@@ -118,8 +121,22 @@ function SingleArticle() {
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >
-        <Information />
-        <Tabs />
+        <Information
+          title="✨ The Ultimate Thailand Getaway: 5 Days, 4 Nights of Curated Experiences"
+          description={
+            <>
+              Pattaya & Bangkok | Tiger Encounters | Island Escapes | Floating Markets | Safari World | Pirate Gala Cruise (Optional)
+              <br /> <br />
+              Step into a journey where culture meets comfort, and adventure blends with elegance. This meticulously designed 5-day, 4-night Thailand tour offers a seamless blend of relaxation, thrill, and rich cultural immersion — ideal for group travelers, families, and corporate outings.
+            </>
+          }
+        />
+        <TabsSimple
+          tabs={[
+            { label: "Gallery", component: <Gallery /> },
+            { label: "Timeline", component: <ThailandTripTimeline /> }
+          ]}
+        />
       </Card>
       <SimpleModal
         show={showModal}

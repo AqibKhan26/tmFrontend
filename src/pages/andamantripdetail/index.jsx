@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import AndamanTripTimeline from "pages/andamantripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Andaman
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              5 Days 4 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 18,880
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,25 +122,28 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🏝️ Amazing Andamans: 5 Days, 4 Nights Island Escape"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Port Blair • Havelock Island • Elephant Beach • Kalapathar Beach
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Discover the breathtaking beauty of the Andaman Islands with this 5D/4N adventure. Experience a
+              mix of history, pristine beaches, and thrilling water sports in one of India’s most exotic
+              destinations.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              Explore the historic Cellular Jail and its moving Light & Sound show, bask in the turquoise
+              waters of Elephant Beach, and capture postcard-perfect memories at Kalapathar. With private
+              transfers and hand-picked activities, this journey offers the perfect blend of culture, nature,
+              and relaxation.
             </>
           }
         />
 
+
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <AndamanTripTimeline /> },
           ]}
         />
       </Card>

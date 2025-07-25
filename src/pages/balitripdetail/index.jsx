@@ -33,8 +33,8 @@ import SimpleModal from "sections/BookNowModal";
 import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/kenyatripdetail/sections/Gallery";
-import KenyaTripTimeline from "pages/kenyatripdetail/sections/Timeline";
+import Gallery from "pages/balitripdetail/sections/Gallery";
+import BaliTripTimeline from "pages/balitripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Kenya
+              Explore Bali
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,10 +91,10 @@ function SingleArticle() {
               mr={{ xs: 0, sm: 6 }}
               pr={{ xs: 0, sm: 6 }}
             >
-              3 Days 2 Nights
+              5 Days 4 Nights
             </MKTypography>
             <MKTypography variant="h5" color="white" mt={2} mb={1}>
-              Starting from ₹ 77,199
+              Starting from ₹ 22,999
             </MKTypography>
             <MKButton
               onClick={toggleModal}
@@ -122,17 +122,18 @@ function SingleArticle() {
         }}
       >
         <Information
-          title="🐘 Majestic Amboseli: 3 Days, 2 Nights Safari Adventure"
+          title="🌴 Bali Bliss: 5 Days, 4 Nights Adventure & Culture Escape"
           description={
             <>
-              Amboseli National Park • Mount Kilimanjaro Views • Maasai Culture
+              Kuta • Nusa Penida • Ubud • Kintamani Volcano • Uluwatu Temple
               <br /><br />
-              Discover the breathtaking beauty of Kenya's Amboseli National Park, famous for large herds of
-              elephants, diverse wildlife, and iconic views of snow-capped Mount Kilimanjaro. This 3D/2N
-              adventure offers the perfect blend of game drives, cultural encounters, and scenic landscapes.
+              Dive into the tropical paradise of Bali with this carefully crafted 5D/4N journey. From thrilling
+              watersports and serene beaches to sacred temples and volcanic vistas, this experience balances
+              adventure, relaxation, and cultural immersion.
               <br /><br />
-              Stay at the luxurious Amboseli Serena Safari Lodge and experience full-board hospitality while
-              exploring one of Africa’s most renowned safari destinations.
+              Explore the stunning cliffs of Uluwatu, the crystal-clear waters of Nusa Penida, and the lush
+              greenery of Ubud — all while enjoying private transfers and curated local experiences designed for
+              comfort and unforgettable memories.
             </>
           }
         />
@@ -140,7 +141,7 @@ function SingleArticle() {
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <KenyaTripTimeline /> },
+            { label: "Timeline", component: <BaliTripTimeline /> },
           ]}
         />
       </Card>

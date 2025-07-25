@@ -42,6 +42,15 @@ import Page from "pages/landing";
 import KenyaTripDetail from "pages/kenyatripdetail";
 import ThailandTripDetail from "pages/thailandtripdetail";
 import VietnamTripDetail from "pages/vietnamtripdetail";
+import BaliTripDetail from "pages/balitripdetail";
+import AndamanTripDetail from "pages/andamantripdetail";
+import BhutanTripDetail from "pages/bhutantripdetail";
+import DubaiTripDetail from "pages/dubaitripdetail";
+import LakshadweepTripDetail from "pages/lakshadweeptripdetail";
+import MalayasiaTripDetail from "pages/malayasiatripdetail";
+import PhillipinestripDetail from "pages/phillipinestripdetail";
+import SingaporeTripDetail from "pages/singaporetripdetail";
+import SriLankaTripDetail from "pages/srilankatripdetail";
 import HomeIcon from "@mui/icons-material/Home";
 import LocalAirportIcon from '@mui/icons-material/LocalAirport';
 
@@ -70,6 +79,51 @@ const routes = [
         name: "Vietnam",
         route: "/vietnam",
         component: <VietnamTripDetail />,
+      },
+      {
+        name: "Bali",
+        route: "/bali",
+        component: <BaliTripDetail />,
+      },
+      {
+        name: "Andaman",
+        route: "/andaman",
+        component: <AndamanTripDetail />,
+      },
+      {
+        name: "Bhutan",
+        route: "/Bhutan",
+        component: <BhutanTripDetail />,
+      },
+      {
+        name: "Dubai",
+        route: "/dubai",
+        component: <DubaiTripDetail />,
+      },
+      {
+        name: "Lakshadweep",
+        route: "/lakshadweep",
+        component: <LakshadweepTripDetail />,
+      },
+      {
+        name: "Malayasia",
+        route: "/malayasia",
+        component: <MalayasiaTripDetail />,
+      },
+      {
+        name: "Phillipines",
+        route: "/phillipines",
+        component: <PhillipinestripDetail />,
+      },
+      {
+        name: "Singapore",
+        route: "/singapore",
+        component: <SingaporeTripDetail />,
+      },
+      {
+        name: "SriLanka",
+        route: "/srilanka",
+        component: <SriLankaTripDetail />,
       },
     ]
   },
