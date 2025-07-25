@@ -34,7 +34,7 @@ import bgImage from "assets/images/products/product-3-min.jpeg";
 import Information from "components/Custom/Information";
 
 import Gallery from "pages/balitripdetail/sections/Gallery";
-import SingaporeTripTimeline from "pages/Singaporetripdetail/sections/Timeline";
+import SingaporeTripTimeline from "pages/singaporetripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
