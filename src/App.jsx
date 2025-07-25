@@ -20,6 +20,7 @@ import DefaultNavbar from "sections/Navbars/DefaultNavbar";
 import DefaultFooter from "sections/Footers/DefaultFooter";
 
 import logoCT from "assets/images/tripmaster.inLogoTransparentWhite2.png";
+import NewNavbar from "sections/Navbars/NewNavBar";
 
 export default function App() {
   const { pathname } = useLocation();
@@ -47,13 +48,14 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <DefaultNavbar
+      {/* <DefaultNavbar
         brand="TripMaster.in"
         routes={routes}
         transparent
         light
         image={logoCT}
-      />
+      /> */}
+      <NewNavbar/>
       <Routes>
         {getRoutes(routes)}
         <Route path="/home" element={<Page />} />
