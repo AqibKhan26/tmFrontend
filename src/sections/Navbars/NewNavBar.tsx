@@ -219,6 +219,7 @@ export default function NewNavbar() {
                             color="inherit"
                             aria-label="menu"
                             onClick={handleDrawerToggle}
+                            sx={{ color: "#fff" }}
                         >
                             <MenuIcon />
                         </IconButton>
