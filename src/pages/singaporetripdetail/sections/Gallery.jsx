@@ -4,25 +4,43 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import singaporeGallery01 from "assets/images/singapore/SingaporeGallery01.jpg";
+import singaporeGallery02 from "assets/images/singapore/SingaporeGallery02.jpg";
+import singaporeGallery03 from "assets/images/singapore/SingaporeGallery03.jpg";
+import singaporeGallery04 from "assets/images/singapore/SingaporeGallery04.jpg";
+import singaporeGallery05 from "assets/images/singapore/SingaporeGallery05.jpg";
+import singaporeGallery06 from "assets/images/singapore/SingaporeGallery06.jpg";
+import singaporeGallery07 from "assets/images/singapore/SingaporeGallery07.jpg";
+import singaporeGallery08 from "assets/images/singapore/SingaporeGallery08.jpg";
+import singaporeGallery09 from "assets/images/singapore/SingaporeGallery09.jpg";
+import singaporeGallery10 from "assets/images/singapore/SingaporeGallery10.jpg";
+import singaporeGallery11 from "assets/images/singapore/SingaporeGallery11.jpg";
+import singaporeGallery12 from "assets/images/singapore/SingaporeGallery12.jpg";
+import singaporeGallery13 from "assets/images/singapore/SingaporeGallery13.jpg";
+import singaporeGallery14 from "assets/images/singapore/SingaporeGallery14.jpg";
+import singaporeGallery15 from "assets/images/singapore/SingaporeGallery15.jpg";
+import singaporeGallery16 from "assets/images/singapore/SingaporeGallery16.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        singaporeGallery01,
+        singaporeGallery02,
+        singaporeGallery03,
+        singaporeGallery04,
+        singaporeGallery05,
+        singaporeGallery06,
+        singaporeGallery07,
+        singaporeGallery08,
+        singaporeGallery09,
+        singaporeGallery10,
+        singaporeGallery11,
+        singaporeGallery12,
+        singaporeGallery13,
+        singaporeGallery14,
+        singaporeGallery15,
+        singaporeGallery16,
     ];
 
     const handleOpen = (index) => {

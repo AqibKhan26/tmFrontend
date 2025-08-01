@@ -47,7 +47,7 @@ import AndamanTripDetail from "pages/andamantripdetail";
 import BhutanTripDetail from "pages/bhutantripdetail";
 import DubaiTripDetail from "pages/dubaitripdetail";
 import LakshadweepTripDetail from "pages/lakshadweeptripdetail";
-import MalayasiaTripDetail from "pages/malayasiatripdetail";
+import MalaysiaTripDetail from "pages/malaysiatripdetail";
 import PhillipinestripDetail from "pages/phillipinestripdetail";
 import SingaporeTripDetail from "pages/singaporetripdetail";
 import SriLankaTripDetail from "pages/srilankatripdetail";
@@ -106,9 +106,9 @@ const routes = [
         component: <LakshadweepTripDetail />,
       },
       {
-        name: "Malayasia",
-        route: "/malayasia",
-        component: <MalayasiaTripDetail />,
+        name: "Malaysia",
+        route: "/malaysia",
+        component: <MalaysiaTripDetail />,
       },
       {
         name: "Phillipines",

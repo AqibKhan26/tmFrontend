@@ -4,25 +4,41 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import baliGallery1 from "assets/images/bali/BaliGallery01.png"
+import baliGallery2 from "assets/images/bali/BaliGallery02.png"
+import baliGallery3 from "assets/images/bali/BaliGallery03.png"
+import baliGallery4 from "assets/images/bali/BaliGallery04.png"
+import baliGallery5 from "assets/images/bali/BaliGallery05.jpg"
+import baliGallery6 from "assets/images/bali/BaliGallery06.jpg"
+import baliGallery7 from "assets/images/bali/BaliGallery07.jpg"
+import baliGallery8 from "assets/images/bali/BaliGallery08.jpg"
+import baliGallery9 from "assets/images/bali/BaliGallery09.jpg"
+import baliGallery10 from "assets/images/bali/BaliGallery10.jpg"
+import baliGallery11 from "assets/images/bali/BaliGallery11.jpg"
+import baliGallery12 from "assets/images/bali/BaliGallery12.jpg"
+import baliGallery13 from "assets/images/bali/BaliGallery13.jpg"
+import baliGallery14 from "assets/images/bali/BaliGallery14.jpg"
+import baliGallery15 from "assets/images/bali/BaliGallery15.jpg"
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        baliGallery1,
+        baliGallery2,
+        baliGallery3,
+        baliGallery4,
+        baliGallery5,
+        baliGallery6,
+        baliGallery7,
+        baliGallery8,
+        baliGallery9,
+        baliGallery10,
+        baliGallery11,
+        baliGallery12,
+        baliGallery13,
+        baliGallery14,
+        baliGallery15,
     ];
 
     const handleOpen = (index) => {

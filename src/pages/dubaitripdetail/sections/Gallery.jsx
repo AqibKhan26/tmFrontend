@@ -4,25 +4,42 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import dubaiGallery1 from "assets/images/dubai/DubaiGallery01.jpg";
+// Skipping DubaiGallery02 as per instruction
+import dubaiGallery3 from "assets/images/dubai/DubaiGallery03.jpg";
+import dubaiGallery4 from "assets/images/dubai/DubaiGallery04.jpg";
+import dubaiGallery5 from "assets/images/dubai/DubaiGallery05.jpg";
+import dubaiGallery6 from "assets/images/dubai/DubaiGallery06.jpg";
+import dubaiGallery7 from "assets/images/dubai/DubaiGallery07.jpg";
+import dubaiGallery8 from "assets/images/dubai/DubaiGallery08.jpg";
+import dubaiGallery9 from "assets/images/dubai/DubaiGallery09.jpg";
+import dubaiGallery10 from "assets/images/dubai/DubaiGallery10.jpg";
+import dubaiGallery11 from "assets/images/dubai/DubaiGallery11.jpg";
+import dubaiGallery12 from "assets/images/dubai/DubaiGallery12.jpg";
+import dubaiGallery13 from "assets/images/dubai/DubaiGallery13.jpg"; 
+import dubaiGallery15 from "assets/images/dubai/DubaiGallery15.jpg";
+import dubaiGallery16 from "assets/images/dubai/DubaiGallery16.jpg";
+import dubaiGallery17 from "assets/images/dubai/DubaiGallery17.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        dubaiGallery1,
+        dubaiGallery3,
+        dubaiGallery4,
+        dubaiGallery5,
+        dubaiGallery6,
+        dubaiGallery7,
+        dubaiGallery8,
+        dubaiGallery9,
+        dubaiGallery10,
+        dubaiGallery11,
+        dubaiGallery12,
+        dubaiGallery13,
+        dubaiGallery15,
+        dubaiGallery16,
+        dubaiGallery17,
     ];
 
     const handleOpen = (index) => {

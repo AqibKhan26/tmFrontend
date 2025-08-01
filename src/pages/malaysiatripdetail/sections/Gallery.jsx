@@ -4,25 +4,35 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import malaysiaGallery01 from "assets/images/malaysia/MalaysiaGallery01.jpg";
+import malaysiaGallery02 from "assets/images/malaysia/MalaysiaGallery02.jpg";
+import malaysiaGallery03 from "assets/images/malaysia/MalaysiaGallery03.jpg";
+import malaysiaGallery04 from "assets/images/malaysia/MalaysiaGallery04.jpg";
+import malaysiaGallery05 from "assets/images/malaysia/MalaysiaGallery05.jpg";
+import malaysiaGallery06 from "assets/images/malaysia/MalaysiaGallery06.jpg";
+import malaysiaGallery07 from "assets/images/malaysia/MalaysiaGallery07.jpg";
+import malaysiaGallery10 from "assets/images/malaysia/MalaysiaGallery10.jpg";
+import malaysiaGallery12 from "assets/images/malaysia/MalaysiaGallery12.jpg";
+import malaysiaGallery14 from "assets/images/malaysia/MalaysiaGallery14.jpg";
+import malaysiaGallery17 from "assets/images/malaysia/MalaysiaGallery17.jpg";
+import malaysiaGallery18 from "assets/images/malaysia/MalaysiaGallery18.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        malaysiaGallery01,
+        malaysiaGallery02,
+        malaysiaGallery03,
+        malaysiaGallery04,
+        malaysiaGallery05,
+        malaysiaGallery06,
+        malaysiaGallery07,
+        malaysiaGallery10,
+        malaysiaGallery12,
+        malaysiaGallery14,
+        malaysiaGallery17,
+        malaysiaGallery18,
     ];
 
     const handleOpen = (index) => {

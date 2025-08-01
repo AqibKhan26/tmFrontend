@@ -30,10 +30,10 @@ import MKButton from "components/MKButton";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
-import bgImage from "assets/images/products/product-3-min.jpeg";
+import bgImage from "assets/images/bhutan/BhutanGallery05.jpg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/balitripdetail/sections/Gallery";
+import Gallery from "pages/bhutantripdetail/sections/Gallery";
 import BhutanTripTimeline from "pages/bhutantripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 

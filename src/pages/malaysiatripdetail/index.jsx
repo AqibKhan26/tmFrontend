@@ -30,11 +30,11 @@ import MKButton from "components/MKButton";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
-import bgImage from "assets/images/products/product-3-min.jpeg";
+import bgImage from "assets/images/malaysia/MalaysiaGallery06.jpg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/balitripdetail/sections/Gallery";
-import MalayasiaTripTimeline from "pages/malayasiatripdetail/sections/Timeline";
+import Gallery from "pages/malaysiatripdetail/sections/Gallery";
+import MalaysiaTripTimeline from "pages/malaysiatripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
 function SingleArticle() {
@@ -81,7 +81,7 @@ function SingleArticle() {
                 },
               })}
             >
-              Explore Malayasia
+              Explore Malaysia
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -140,7 +140,7 @@ function SingleArticle() {
         <TabsSimple
           tabs={[
             { label: "Gallery", component: <Gallery /> },
-            { label: "Timeline", component: <MalayasiaTripTimeline /> },
+            { label: "Timeline", component: <MalaysiaTripTimeline /> },
           ]}
         />
       </Card>

@@ -4,25 +4,35 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import phillipinesGallery01 from "assets/images/phillipines/PhillipinesGallery01.jpg";
+import phillipinesGallery02 from "assets/images/phillipines/PhillipinesGallery02.jpg";
+import phillipinesGallery03 from "assets/images/phillipines/PhillipinesGallery03.jpg";
+import phillipinesGallery04 from "assets/images/phillipines/PhillipinesGallery04.jpg";
+import phillipinesGallery05 from "assets/images/phillipines/PhillipinesGallery05.jpg";
+import phillipinesGallery06 from "assets/images/phillipines/PhillipinesGallery06.jpg";
+import phillipinesGallery07 from "assets/images/phillipines/PhillipinesGallery07.jpg";
+import phillipinesGallery08 from "assets/images/phillipines/PhillipinesGallery08.jpg";
+import phillipinesGallery09 from "assets/images/phillipines/PhillipinesGallery09.jpg";
+import phillipinesGallery10 from "assets/images/phillipines/PhillipinesGallery10.jpg";
+import phillipinesGallery11 from "assets/images/phillipines/PhillipinesGallery11.jpg";
+import phillipinesGallery12 from "assets/images/phillipines/PhillipinesGallery12.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        phillipinesGallery01,
+        phillipinesGallery02,
+        phillipinesGallery03,
+        phillipinesGallery04,
+        phillipinesGallery05,
+        phillipinesGallery06,
+        phillipinesGallery07,
+        phillipinesGallery08,
+        phillipinesGallery09,
+        phillipinesGallery10,
+        phillipinesGallery11,
+        phillipinesGallery12,
     ];
 
     const handleOpen = (index) => {

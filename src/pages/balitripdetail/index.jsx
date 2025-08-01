@@ -30,7 +30,7 @@ import MKButton from "components/MKButton";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
-import bgImage from "assets/images/products/product-3-min.jpeg";
+import bgImage from "assets/images/bali/BaliGallery05.jpg";
 import Information from "components/Custom/Information";
 
 import Gallery from "pages/balitripdetail/sections/Gallery";

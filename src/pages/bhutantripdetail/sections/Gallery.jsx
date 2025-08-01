@@ -4,25 +4,33 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import bhutanGallery1 from "assets/images/bhutan/BhutanGallery01.jpg";
+import bhutanGallery2 from "assets/images/bhutan/BhutanGallery02.jpg";
+import bhutanGallery3 from "assets/images/bhutan/BhutanGallery03.jpg";
+import bhutanGallery4 from "assets/images/bhutan/BhutanGallery04.jpg";
+import bhutanGallery5 from "assets/images/bhutan/BhutanGallery05.jpg";
+import bhutanGallery6 from "assets/images/bhutan/BhutanGallery06.jpg";
+import bhutanGallery7 from "assets/images/bhutan/BhutanGallery07.jpg";
+import bhutanGallery8 from "assets/images/bhutan/BhutanGallery08.jpg";
+import bhutanGallery9 from "assets/images/bhutan/BhutanGallery09.jpg";
+import bhutanGallery10 from "assets/images/bhutan/BhutanGallery10.jpg";
+import bhutanGallery11 from "assets/images/bhutan/BhutanGallery11.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        bhutanGallery1,
+        bhutanGallery2,
+        bhutanGallery3,
+        bhutanGallery4,
+        bhutanGallery5,
+        bhutanGallery6,
+        bhutanGallery7,
+        bhutanGallery8,
+        bhutanGallery9,
+        bhutanGallery10,
+        bhutanGallery11,
     ];
 
     const handleOpen = (index) => {

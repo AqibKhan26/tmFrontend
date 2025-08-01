@@ -4,25 +4,55 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import sriLankaGallery01 from "assets/images/srilanka/SriLankaGallery01.jpg";
+import sriLankaGallery02 from "assets/images/srilanka/SriLankaGallery02.jpg";
+import sriLankaGallery03 from "assets/images/srilanka/SriLankaGallery03.jpg";
+import sriLankaGallery04 from "assets/images/srilanka/SriLankaGallery04.jpg";
+import sriLankaGallery05 from "assets/images/srilanka/SriLankaGallery05.jpg";
+import sriLankaGallery06 from "assets/images/srilanka/SriLankaGallery06.jpg";
+import sriLankaGallery07 from "assets/images/srilanka/SriLankaGallery07.jpg";
+import sriLankaGallery08 from "assets/images/srilanka/SriLankaGallery08.jpg";
+import sriLankaGallery09 from "assets/images/srilanka/SriLankaGallery09.jpg";
+import sriLankaGallery10 from "assets/images/srilanka/SriLankaGallery10.jpg";
+import sriLankaGallery11 from "assets/images/srilanka/SriLankaGallery11.jpg";
+import sriLankaGallery12 from "assets/images/srilanka/SriLankaGallery12.jpg";
+import sriLankaGallery13 from "assets/images/srilanka/SriLankaGallery13.jpg";
+import sriLankaGallery14 from "assets/images/srilanka/SriLankaGallery14.jpg";
+import sriLankaGallery15 from "assets/images/srilanka/SriLankaGallery15.jpg";
+import sriLankaGallery16 from "assets/images/srilanka/SriLankaGallery16.jpg";
+import sriLankaGallery17 from "assets/images/srilanka/SriLankaGallery17.jpg";
+import sriLankaGallery18 from "assets/images/srilanka/SriLankaGallery18.jpg";
+import sriLankaGallery19 from "assets/images/srilanka/SriLankaGallery19.jpg";
+import sriLankaGallery20 from "assets/images/srilanka/SriLankaGallery20.jpg";
+import sriLankaGallery21 from "assets/images/srilanka/SriLankaGallery21.jpg";
+import sriLankaGallery22 from "assets/images/srilanka/SriLankaGallery22.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        sriLankaGallery01,
+        sriLankaGallery02,
+        sriLankaGallery03,
+        sriLankaGallery04,
+        sriLankaGallery05,
+        sriLankaGallery06,
+        sriLankaGallery07,
+        sriLankaGallery08,
+        sriLankaGallery09,
+        sriLankaGallery10,
+        sriLankaGallery11,
+        sriLankaGallery12,
+        sriLankaGallery13,
+        sriLankaGallery14,
+        sriLankaGallery15,
+        sriLankaGallery16,
+        sriLankaGallery17,
+        sriLankaGallery18,
+        sriLankaGallery19,
+        sriLankaGallery20,
+        sriLankaGallery21,
+        sriLankaGallery22,
     ];
 
     const handleOpen = (index) => {

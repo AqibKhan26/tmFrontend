@@ -4,25 +4,33 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useSwipeable } from 'react-swipeable';
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import kenyaGalleryOne from "assets/images/products/kenyaGalleryOne.png";
-import kenyaGalleryTwo from "assets/images/products/kenyaGalleryTwo.png";
-import kenyaGalleryThree from "assets/images/products/kenyaGalleryThree.png";
-import kenyaGalleryFour from "assets/images/products/kenyaGalleryFour.png";
-import argyleHotel from "assets/images/kenya/argyleHotel.jpg";
-import cliffHotel from "assets/images/kenya/theCliffHotel.jpg";
-import ashnilCamp from "assets/images/kenya/ashnilCamp.jpg";
+import andamanGallery01 from "assets/images/andaman/AndamanGallery01.jpg";
+import andamanGallery02 from "assets/images/andaman/AndamanGallery02.jpg";
+import andamanGallery06 from "assets/images/andaman/AndamanGallery06.jpg";
+import andamanGallery07 from "assets/images/andaman/AndamanGallery07.jpg";
+import andamanGallery09 from "assets/images/andaman/AndamanGallery09.jpg";
+import andamanGallery10 from "assets/images/andaman/AndamanGallery10.jpg";
+import andamanGallery11 from "assets/images/andaman/AndamanGallery11.jpg";
+import andamanGallery16 from "assets/images/andaman/AndamanGallery16.jpg";
+import andamanGallery17 from "assets/images/andaman/AndamanGallery17.jpg";
+import andamanGallery18 from "assets/images/andaman/AndamanGallery18.jpg";
+import andamanGallery19 from "assets/images/andaman/AndamanGallery19.jpg";
 
 function Gallery() {
     const [open, setOpen] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        kenyaGalleryOne,
-        kenyaGalleryTwo,
-        kenyaGalleryThree,
-        kenyaGalleryFour,
-        argyleHotel,
-        cliffHotel,
-        ashnilCamp,
+        andamanGallery01,
+        andamanGallery02,
+        andamanGallery06,
+        andamanGallery07,
+        andamanGallery09,
+        andamanGallery10,
+        andamanGallery11,
+        andamanGallery16,
+        andamanGallery17,
+        andamanGallery18,
+        andamanGallery19,
     ];
 
     const handleOpen = (index) => {

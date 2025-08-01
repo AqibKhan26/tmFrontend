@@ -30,10 +30,10 @@ import MKButton from "components/MKButton";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
-import bgImage from "assets/images/products/product-3-min.jpeg";
+import bgImage from "assets/images/singapore/SingaporeGallery08.jpg";
 import Information from "components/Custom/Information";
 
-import Gallery from "pages/balitripdetail/sections/Gallery";
+import Gallery from "pages/singaporetripdetail/sections/Gallery";
 import SingaporeTripTimeline from "pages/singaporetripdetail/sections/Timeline";
 import TabsSimple from "components/Custom/TabsSimple";
 
