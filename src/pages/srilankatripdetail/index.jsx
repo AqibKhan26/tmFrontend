@@ -30,7 +30,7 @@ import MKButton from "components/MKButton";
 import SimpleModal from "sections/BookNowModal";
 
 // Images
-import bgImage from "assets/images/srilanka/SriLankaGallery04.jpg";
+import bgImage from "assets/images/srilanka/SrilankaGallery04.jpg";
 import Information from "components/Custom/Information";
 
 import Gallery from "pages/srilankatripdetail/sections/Gallery";
