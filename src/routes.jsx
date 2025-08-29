@@ -100,11 +100,11 @@ const routes = [
         route: "/dubai",
         component: <DubaiTripDetail />,
       },
-      {
-        name: "Lakshadweep",
-        route: "/lakshadweep",
-        component: <LakshadweepTripDetail />,
-      },
+      // {
+      //   name: "Lakshadweep",
+      //   route: "/lakshadweep",
+      //   component: <LakshadweepTripDetail />,
+      // },
       {
         name: "Malaysia",
         route: "/malaysia",

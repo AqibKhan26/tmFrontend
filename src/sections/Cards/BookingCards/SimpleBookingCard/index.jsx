@@ -33,7 +33,7 @@ import MKButton from "components/MKButton";
 function SimpleBookingCard({ image, title, description, categories = [], action }) {
   return (
     <Card>
-      <MKBox position="relative" borderRadius="lg" mx={2} mt={-3}>
+      <MKBox position="relative" borderRadius="lg" mx={2} mt={4}>
         <MKBox
           component="img"
           src={image}

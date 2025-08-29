@@ -1,40 +1,27 @@
-/*
-=========================================================
-* Material Kit 2 PRO React - v2.1.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-pro-react
-* Copyright 2024 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
-// @mui material components
+import React from "react";
 import Container from "@mui/material/Container";
-
-// Material Kit 2 PRO React components
+import { useTheme, useMediaQuery } from "@mui/material";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 PRO React components
 import SimpleBookingCard from "sections/Cards/BookingCards/SimpleBookingCard";
+import Carousel from "react-material-ui-carousel";
+import cards from "data/cardsData";
 
-// Images
-import thailandPic from "assets/images/products/product-1-min.jpg";
-import vietnamPic from "assets/images/products/product-2-min.jpeg";
-import kenyaPic from "assets/images/products/product-3-min.jpeg";
+function chunkArray(arr, size) {
+  const chunks = [];
+  for (let i = 0; i < arr.length; i += size) {
+    chunks.push(arr.slice(i, i + size));
+  }
+  return chunks;
+}
 
 function Places() {
-  const actionProps = {
-    type: "internal",
-    route: "/pages/landing-pages/rental",
-    color: "info",
-    label: "More Details",
-  };
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // small screens
+
+  // Determine cards per page based on screen
+  const cardsPerPage = isMobile ? 3 : 6; // 3 cards for mobile, 6 for desktop
+  const cardChunks = chunkArray(cards, cardsPerPage);
 
   return (
     <MKBox component="section" py={3}>
@@ -42,84 +29,45 @@ function Places() {
         variant="h3"
         color="black"
         align="center"
-        sx={({ breakpoints, typography: { size }, spacing }) => ({
-          mb: spacing(3),
-          [breakpoints.down("md")]: {
-            fontSize: size["3xl"],
-          },
-        })}
+        sx={{ mb: 3 }}
       >
         Handpicked Travel Experiences Just for You
       </MKTypography>
 
       <Container>
-        <MKBox
-          display="flex"
-          flexWrap="wrap"
-          justifyContent="space-between"
-          gap={3}
-          sx={{ mt: 3 }}
+        <Carousel
+          navButtonsAlwaysVisible
+          animation="fade"
+          autoPlay={false}
+          swipe={true}
+          indicatorContainerProps={{ style: { marginTop: "10px" } }}
         >
-          <MKBox
-            flex="1 1 calc(33.333% - 24px)"
-            minWidth="300px"
-            maxWidth="400px"
-            mt={3}
-          >
-            <SimpleBookingCard
-              image={vietnamPic}
-              title="Vietnam"
-              description="Explore Vietnam in 5 days! Discover Hanoi’s rich history, cruise the stunning Halong Bay, trek Mua Cave, visit ancient Trang An, and experience vibrant Ho Chi Minh City. Perfect blend of culture, nature & adventure with comfort—ideal for groups!"
-              categories={["5 Days", "4 Nights", "Starting ₹ 22,999"]}
-              action={{
-                type: "internal",
-                route: "/vietnam",
-                color: "info",
-                label: "More Details",
-              }}
-            />
-          </MKBox>
-
-          <MKBox
-            flex="1 1 calc(33.333% - 24px)"
-            minWidth="300px"
-            maxWidth="400px"
-            mt={3}
-          >
-            <SimpleBookingCard
-              image={thailandPic}
-              title="Thailand"
-              description="Experience the best of Thailand in 5 days! Visit Pattaya’s Tiger Topia, Coral Island, and Big Buddha; enjoy the floating market, Safari World, and Bangkok’s iconic temples. Optional pirate boat dinner cruise!"
-              categories={["5 Days", "4 Nights", "Starting ₹ 18,999"]}
-              action={{
-                type: "internal",
-                route: "/thailand",
-                color: "info",
-                label: "More Details",
-              }}
-            />
-          </MKBox>
-
-          <MKBox
-            flex="1 1 calc(33.333% - 24px)"
-            minWidth="300px"
-            maxWidth="400px"
-            mt={3}
-          >
-            <SimpleBookingCard
-              image={kenyaPic}
-              title="Kenya"
-              description="Experience the thrill of Kenya’s wild beauty on this 8-day journey. Explore Nairobi, Lake Nakuru, and the legendary Masai Mara in a private 4x4. Enjoy luxury stays, stunning wildlife, and unforgettable moments in the heart of Africa."
-              categories={["8 Days", "7 Nights", "Starting ₹ 3,19,999"]}
-              action={{
-                type: "internal",
-                route: "/kenya",
-                color: "info",
-                label: "More Details",
-              }}
-            />
-          </MKBox>
-        </MKBox>
+          {cardChunks.map((chunk, idx) => (
+            <MKBox
+              key={idx}
+              display="grid"
+              gridTemplateColumns={isMobile ? "1fr" : "repeat(3, 1fr)"}
+              gridTemplateRows={isMobile ? "repeat(3, 1fr)" : "repeat(2, 1fr)"}
+              gap={3}
+            >
+              {chunk.map((card, i) => (
+                <SimpleBookingCard
+                  key={i}
+                  image={card.image}
+                  title={card.title}
+                  description={card.description}
+                  categories={card.categories}
+                  action={{
+                    type: "internal",
+                    route: card.route,
+                    color: "info",
+                    label: "More Details",
+                  }}
+                />
+              ))}
+            </MKBox>
+          ))}
+        </Carousel>
       </Container>
     </MKBox>
   );
