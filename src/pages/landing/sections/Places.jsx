@@ -20,7 +20,7 @@ function Places() {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // small screens
 
   // Determine cards per page based on screen
-  const cardsPerPage = isMobile ? 3 : 6; // 3 cards for mobile, 6 for desktop
+  const cardsPerPage = isMobile ? 1 : 6; // 3 cards for mobile, 6 for desktop
   const cardChunks = chunkArray(cards, cardsPerPage);
 
   return (

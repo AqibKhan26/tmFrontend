@@ -40,6 +40,7 @@ function SimpleBookingCard({ image, title, description, categories = [], action 
           alt={title}
           borderRadius="lg"
           shadow="md"
+          loading="lazy"
           width="100%"
           position="relative"
           zIndex={1}
