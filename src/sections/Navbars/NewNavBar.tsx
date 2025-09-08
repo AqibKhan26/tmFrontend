@@ -149,14 +149,20 @@ export default function NewNavbar() {
                                         sx={{
                                             color: "#fff",
                                             textTransform: "none",
+                                            display: "flex",
+                                            alignItems: "center", // ✅ vertical center
+                                            gap: 1,               // space between icon and text
                                             "&:hover": { backgroundColor: "transparent", color: "#f0f0f0" },
                                             "&:active": { backgroundColor: "transparent", color: "#fff" },
                                             "&:focus": { outline: "none", backgroundColor: "transparent" },
                                         }}
                                     >
-                                        {route.icon}
-                                        {route.name}
+                                        <Box sx={{ display: "flex", alignItems: "center" }}>
+                                            {route.icon}
+                                            <Box ml={0.5}>{route.name}</Box>
+                                        </Box>
                                     </Button>
+
 
                                     {openCollapse && (
                                         <Box
@@ -206,8 +212,10 @@ export default function NewNavbar() {
                                         "&:visited": { color: "#fff" },
                                     }}
                                 >
-                                    {route.icon}
-                                    {route.name}
+                                    <Box sx={{ display: "flex", alignItems: "center" }}>
+                                        {route.icon}
+                                        <Box ml={0.5}>{route.name}</Box>
+                                    </Box>
                                 </Button>
                             )
                         )}

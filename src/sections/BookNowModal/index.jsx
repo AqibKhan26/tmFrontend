@@ -27,6 +27,7 @@ function SimpleModal({ show, toggleModal, defaultMessage = "" }) {
   const form = useRef();
   const userName = useRef();
   const userEmail = useRef();
+  const userPhone = useRef();
   const message = useRef();
 
   const [emailSent, setEmailSent] = useState(false);
@@ -108,6 +109,7 @@ function SimpleModal({ show, toggleModal, defaultMessage = "" }) {
                       fullWidth
                     />
                   </Grid>
+
                   <Grid item xs={12}>
                     <MKInput
                       variant="standard"
@@ -119,8 +121,28 @@ function SimpleModal({ show, toggleModal, defaultMessage = "" }) {
                       fullWidth
                     />
                   </Grid>
-                  <MKInput type="hidden" name="message" value={defaultMessage} inputRef={message} />
+
+                  <Grid item xs={12}>
+                    <MKInput
+                      variant="standard"
+                      label="Phone Number"
+                      placeholder="(123) 456-7890"
+                      name="user_phone"
+                      inputRef={userPhone}
+                      InputLabelProps={{ shrink: true }}
+                      fullWidth
+                    />
+                  </Grid>
+
+                  <MKInput
+                    type="hidden"
+                    name="message"
+                    value={defaultMessage}
+                    inputRef={message}
+                    sx={{ display: "none" }}
+                  />
                 </Grid>
+
               </MKBox>
 
               <Divider sx={{ my: 0 }} />
