@@ -3,6 +3,7 @@ import { useTheme, useMediaQuery, Container, IconButton } from "@mui/material";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 import SimpleBookingCard from "sections/Cards/BookingCards/SimpleBookingCard";
+import SimpleBookingCardTwo from "sections/Cards/BookingCards/SimpleBookingCardTwo";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -86,7 +87,7 @@ function SwiperPlace() {
                   }}
                 >
                   {chunk.map((card, cIdx) => (
-                    <SimpleBookingCard
+                    <SimpleBookingCardTwo
                       key={cIdx}
                       image={card.image}
                       title={card.title}
