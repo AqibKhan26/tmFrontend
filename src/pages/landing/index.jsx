@@ -25,6 +25,7 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 PRO React examples
 // Rental page sections
 import Places from "pages/landing/sections/Places";
+
 import Contact from "pages/landing/sections/Contact";
 
 // Routes
@@ -34,6 +35,7 @@ import footerRoutes from "footer.routes";
 // Images
 import bgImage from "assets/images/bg-rental.jpeg";
 import { column } from "stylis";
+import SwiperPlace from "./sections/SwiperPlace";
 
 function Landing() {
   return (
@@ -97,7 +99,7 @@ function Landing() {
           overflow: "hidden",
         }}
       >
-        <Places />
+        <SwiperPlace />
         <Contact />
       </Card>
     </>
